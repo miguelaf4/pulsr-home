@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
 import { syne, outfit, ibmPlexMono } from "@/styles/fonts";
 import GsapProvider from "@/components/gsap-provider";
 import "./globals.css";
@@ -22,6 +23,7 @@ export default function RootLayout({
     >
       <body>
         <GsapProvider>{children}</GsapProvider>
+        <Analytics />
       </body>
     </html>
   );
