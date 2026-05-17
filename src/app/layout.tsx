@@ -5,9 +5,9 @@ import GsapProvider from "@/components/gsap-provider";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "PULSR — Live Commerce Studio",
+  title: "PULSR Overlays — Premium Widgets for TikTok Shop Lives",
   description:
-    "Producimos experiencias de live shopping para marcas que quieren vender en TikTok Shop México. Estudio profesional, hosts capacitados, operación completa.",
+    "Create customized overlay widgets for your TikTok Shop live streams. Product cards, timers, alerts, polls — premium widgets fully customizable to your brand.",
   metadataBase: new URL("https://pulsr.live"),
 };
 
