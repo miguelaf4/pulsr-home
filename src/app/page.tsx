@@ -894,15 +894,21 @@ function SaaSFooter() {
           </span>
         </div>
 
-        <div className="flex items-center gap-6">
+        <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
           <a href="#widgets" className="font-[family-name:var(--font-outfit)] text-sm text-muted transition-colors hover:text-white">
             Widgets
           </a>
           <a href="#how-it-works" className="font-[family-name:var(--font-outfit)] text-sm text-muted transition-colors hover:text-white">
             How It Works
           </a>
-          <a href="/privacy-policy" className="font-[family-name:var(--font-outfit)] text-sm text-muted transition-colors hover:text-white">
-            Privacy
+          <a href="/terms" className="font-[family-name:var(--font-outfit)] text-sm text-muted transition-colors hover:text-white">
+            Terms of Service
+          </a>
+          <a href="/refunds" className="font-[family-name:var(--font-outfit)] text-sm text-muted transition-colors hover:text-white">
+            Refund Policy
+          </a>
+          <a href="/privacy" className="font-[family-name:var(--font-outfit)] text-sm text-muted transition-colors hover:text-white">
+            Privacy Policy
           </a>
         </div>
       </div>
