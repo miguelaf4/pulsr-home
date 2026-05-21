@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 function H2({ children }: { children: React.ReactNode }) {
   return (
-    <h2 className="font-[family-name:var(--font-syne)] text-xl font-semibold tracking-tight text-white">
+    <h2 className="font-[family-name:var(--font-satoshi)] text-xl font-semibold tracking-tight text-white">
       {children}
     </h2>
   );

@@ -15,12 +15,12 @@ export default function ContactoBanner() {
               <line x1="12" y1="15" x2="12" y2="3" />
             </svg>
           </div>
-          <h3 className="font-[family-name:var(--font-syne)] text-xl font-bold text-white">
+          <h3 className="font-[family-name:var(--font-satoshi)] text-xl font-bold text-white">
             Análisis Gratuito
           </h3>
         </div>
         
-        <p className="mt-4 font-[family-name:var(--font-outfit)] text-[15px] leading-relaxed text-text">
+        <p className="mt-4 font-[family-name:var(--font-satoshi)] text-[15px] leading-relaxed text-text">
           Obtén un reporte estructurado de los números en tu categoría de TikTok antes de invertir un peso.
         </p>
         
@@ -28,7 +28,7 @@ export default function ContactoBanner() {
           href="https://calendar.app.google/vTswBoXFYyKLH3TF7"
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-6 flex items-center justify-between rounded-xl bg-magenta px-5 py-3 font-[family-name:var(--font-outfit)] text-sm font-semibold text-white transition-all duration-200 hover:bg-magenta-hover active:scale-[0.98]"
+          className="mt-6 flex items-center justify-between rounded-xl bg-magenta px-5 py-3 font-[family-name:var(--font-satoshi)] text-sm font-semibold text-white transition-all duration-200 hover:bg-magenta-hover active:scale-[0.98]"
         >
           <span>Agendar llamada de 30m</span>
           <svg viewBox="0 0 20 20" fill="none" className="h-4 w-4">

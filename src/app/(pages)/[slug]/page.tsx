@@ -34,7 +34,7 @@ export default async function DynamicPage({
       <span className="mb-4 font-mono text-xs tracking-[0.2em] uppercase text-muted">
         /{page.slug}
       </span>
-      <h1 className="font-[family-name:var(--font-syne)] text-4xl font-extrabold text-white sm:text-5xl">
+      <h1 className="font-[family-name:var(--font-satoshi)] text-4xl font-extrabold text-white sm:text-5xl">
         {page.title}
       </h1>
       <p className="mt-4 max-w-lg text-center text-muted">{page.description}</p>

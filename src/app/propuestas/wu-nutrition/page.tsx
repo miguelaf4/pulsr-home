@@ -91,14 +91,14 @@ function SlideCover({ active }: { active: boolean }) {
         <span className="anim font-[family-name:var(--font-mono)] text-xs font-medium tracking-[0.25em] uppercase text-magenta">
           Análisis de Oportunidad
         </span>
-        <h1 className="anim mt-8 font-[family-name:var(--font-syne)] text-4xl font-extrabold leading-[1.1] text-white sm:text-[56px]">
+        <h1 className="anim mt-8 font-[family-name:var(--font-satoshi)] text-4xl font-extrabold leading-[1.1] text-white sm:text-[56px]">
           Wu Nutrition
           <br />
           <span className="bg-gradient-to-r from-magenta via-purple to-blue bg-clip-text text-transparent">
             × TikTok Live Commerce
           </span>
         </h1>
-        <p className="anim mt-6 font-[family-name:var(--font-outfit)] text-lg font-light text-muted">
+        <p className="anim mt-6 font-[family-name:var(--font-satoshi)] text-lg font-light text-muted">
           Análisis preparado por PULSR · Marzo 2026
         </p>
         {/* PULSR logo */}
@@ -114,7 +114,7 @@ function SlideCover({ active }: { active: boolean }) {
             <text
               x="62"
               y="43"
-              fontFamily="var(--font-syne), Syne, sans-serif"
+              fontFamily="var(--font-satoshi), Satoshi, sans-serif"
               fontWeight="800"
               fontSize="44"
               fill="#6B6B88"
@@ -147,7 +147,7 @@ function SlideGap({ active }: { active: boolean }) {
       <span className="anim font-[family-name:var(--font-mono)] text-xs font-medium tracking-[0.25em] uppercase text-magenta">
         Tu Marca
       </span>
-      <h2 className="anim mt-5 font-[family-name:var(--font-syne)] text-3xl font-extrabold leading-[1.1] text-white sm:text-[48px]">
+      <h2 className="anim mt-5 font-[family-name:var(--font-satoshi)] text-3xl font-extrabold leading-[1.1] text-white sm:text-[48px]">
         496K seguidores.
         <br />
         $0 en live commerce.
@@ -156,14 +156,14 @@ function SlideGap({ active }: { active: boolean }) {
       <div className="anim mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-12">
         {/* What they have */}
         <div>
-          <p className="font-[family-name:var(--font-outfit)] text-sm font-medium tracking-wide uppercase text-muted">
+          <p className="font-[family-name:var(--font-satoshi)] text-sm font-medium tracking-wide uppercase text-muted">
             Lo que tienes
           </p>
           <ul className="mt-4 space-y-3">
             {have.map((item) => (
               <li key={item} className="flex items-start gap-3">
                 <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-magenta" />
-                <span className="font-[family-name:var(--font-outfit)] text-base text-white">
+                <span className="font-[family-name:var(--font-satoshi)] text-base text-white">
                   {item}
                 </span>
               </li>
@@ -173,14 +173,14 @@ function SlideGap({ active }: { active: boolean }) {
 
         {/* What's missing */}
         <div>
-          <p className="font-[family-name:var(--font-outfit)] text-sm font-medium tracking-wide uppercase text-muted">
+          <p className="font-[family-name:var(--font-satoshi)] text-sm font-medium tracking-wide uppercase text-muted">
             Lo que falta
           </p>
           <ul className="mt-4 space-y-3">
             {missing.map((item) => (
               <li key={item} className="flex items-start gap-3">
                 <span className="mt-1.5 flex h-2.5 w-2.5 shrink-0 items-center justify-center rounded-full border border-border" />
-                <span className="font-[family-name:var(--font-outfit)] text-base text-white">
+                <span className="font-[family-name:var(--font-satoshi)] text-base text-white">
                   {item}
                 </span>
               </li>
@@ -247,12 +247,12 @@ function SlideProof({ active }: { active: boolean }) {
       <span className="anim font-[family-name:var(--font-mono)] text-xs font-medium tracking-[0.25em] uppercase text-magenta">
         Tu Categoría en TikTok Shop
       </span>
-      <h2 className="anim mt-5 font-[family-name:var(--font-syne)] text-2xl font-extrabold leading-[1.15] text-white sm:text-[40px]">
+      <h2 className="anim mt-5 font-[family-name:var(--font-satoshi)] text-2xl font-extrabold leading-[1.15] text-white sm:text-[40px]">
         Marcas de suplementos ya generan
         <br />
         millones con lives en México.
       </h2>
-      <p className="anim mt-3 font-[family-name:var(--font-outfit)] text-sm font-light text-muted">
+      <p className="anim mt-3 font-[family-name:var(--font-satoshi)] text-sm font-light text-muted">
         Datos de TikTok Shop · Últimos 30 días · Fuente: Kalodata
       </p>
 
@@ -264,14 +264,14 @@ function SlideProof({ active }: { active: boolean }) {
           >
             {/* Glow behind revenue */}
             <div className="pointer-events-none absolute top-1/2 left-1/2 h-32 w-32 -translate-x-1/2 -translate-y-1/4 rounded-full bg-magenta/[0.06] blur-[40px]" />
-            <p className="font-[family-name:var(--font-syne)] text-lg font-bold text-white">
+            <p className="font-[family-name:var(--font-satoshi)] text-lg font-bold text-white">
               {c.name}
             </p>
             <p className="mt-1 font-[family-name:var(--font-mono)] text-xs text-muted">
               {c.followers}
             </p>
             <div className="my-3 h-px bg-border" />
-            <p className="font-[family-name:var(--font-syne)] text-2xl font-extrabold text-magenta sm:text-[32px]">
+            <p className="font-[family-name:var(--font-satoshi)] text-2xl font-extrabold text-magenta sm:text-[32px]">
               <span ref={c.revenueRef}>{c.revenueFinal}</span>
             </p>
             <p className="mt-2 font-[family-name:var(--font-mono)] text-xs text-muted">
@@ -281,7 +281,7 @@ function SlideProof({ active }: { active: boolean }) {
               {c.stats}
             </p>
             {c.callout && (
-              <p className="mt-3 rounded-lg bg-magenta/[0.08] px-3 py-2 font-[family-name:var(--font-outfit)] text-sm text-magenta">
+              <p className="mt-3 rounded-lg bg-magenta/[0.08] px-3 py-2 font-[family-name:var(--font-satoshi)] text-sm text-magenta">
                 {c.callout}
               </p>
             )}
@@ -289,7 +289,7 @@ function SlideProof({ active }: { active: boolean }) {
         ))}
       </div>
 
-      <p className="anim mt-8 text-center font-[family-name:var(--font-outfit)] text-base text-white">
+      <p className="anim mt-8 text-center font-[family-name:var(--font-satoshi)] text-base text-white">
         B Life genera $785K/mes con sesiones de menos de 3 horas.
         <br />
         Wu tiene la audiencia. Solo falta el canal.
@@ -320,17 +320,17 @@ function SlideStrategy({ active }: { active: boolean }) {
       <span className="anim font-[family-name:var(--font-mono)] text-xs font-medium tracking-[0.25em] uppercase text-magenta">
         Tu Estrategia
       </span>
-      <h2 className="anim mt-5 font-[family-name:var(--font-syne)] text-2xl font-extrabold leading-[1.15] text-white sm:text-[40px]">
+      <h2 className="anim mt-5 font-[family-name:var(--font-satoshi)] text-2xl font-extrabold leading-[1.15] text-white sm:text-[40px]">
         Diseñado para Wu Nutrition.
       </h2>
 
       <div className="mt-10 space-y-8">
         {blocks.map((b) => (
           <div key={b.title} className="anim">
-            <h3 className="font-[family-name:var(--font-syne)] text-lg font-bold text-white">
+            <h3 className="font-[family-name:var(--font-satoshi)] text-lg font-bold text-white">
               {b.title}
             </h3>
-            <p className="mt-2 font-[family-name:var(--font-outfit)] text-base font-light leading-relaxed text-text">
+            <p className="mt-2 font-[family-name:var(--font-satoshi)] text-base font-light leading-relaxed text-text">
               {b.body}
             </p>
           </div>
@@ -363,10 +363,10 @@ function SlideInvestment({ active }: { active: boolean }) {
       <span className="anim font-[family-name:var(--font-mono)] text-xs font-medium tracking-[0.25em] uppercase text-magenta">
         Inversión
       </span>
-      <h2 className="anim mt-5 font-[family-name:var(--font-syne)] text-3xl font-extrabold leading-[1.1] text-white sm:text-[48px]">
+      <h2 className="anim mt-5 font-[family-name:var(--font-satoshi)] text-3xl font-extrabold leading-[1.1] text-white sm:text-[48px]">
         <span ref={priceRef}>$42,000 MXN/mes</span>
       </h2>
-      <p className="anim mt-3 font-[family-name:var(--font-outfit)] text-base text-muted">
+      <p className="anim mt-3 font-[family-name:var(--font-satoshi)] text-base text-muted">
         Programa Founding Partner · Primeros 3 meses
       </p>
 
@@ -374,7 +374,7 @@ function SlideInvestment({ active }: { active: boolean }) {
         {included.map((item) => (
           <li key={item} className="flex items-start gap-3">
             <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-magenta" />
-            <span className="font-[family-name:var(--font-outfit)] text-[15px] text-white">
+            <span className="font-[family-name:var(--font-satoshi)] text-[15px] text-white">
               {item}
             </span>
           </li>
@@ -383,7 +383,7 @@ function SlideInvestment({ active }: { active: boolean }) {
 
       <div className="anim mt-10 relative overflow-hidden rounded-xl border border-magenta/20 bg-gradient-to-r from-magenta/[0.08] to-purple/[0.05] px-6 py-5">
         <div className="pointer-events-none absolute -top-8 -right-8 h-24 w-24 rounded-full bg-magenta/10 blur-[30px]" />
-        <p className="relative font-[family-name:var(--font-outfit)] text-[15px] leading-relaxed text-white">
+        <p className="relative font-[family-name:var(--font-satoshi)] text-[15px] leading-relaxed text-white">
           B Life genera <span className="font-semibold text-magenta">$785K/mes</span> con lives. Al 20% de ese rendimiento, Wu generaría <span className="font-semibold text-magenta">~$157K MXN/mes</span> — 3.7× la inversión mensual.
         </p>
       </div>
@@ -399,23 +399,23 @@ function SlideNextStep({ active }: { active: boolean }) {
         <span className="anim font-[family-name:var(--font-mono)] text-xs font-medium tracking-[0.25em] uppercase text-magenta">
           Siguiente Paso
         </span>
-        <h2 className="anim mt-5 font-[family-name:var(--font-syne)] text-3xl font-extrabold leading-[1.1] text-white sm:text-[48px]">
+        <h2 className="anim mt-5 font-[family-name:var(--font-satoshi)] text-3xl font-extrabold leading-[1.1] text-white sm:text-[48px]">
           En 2 semanas, Wu Nutrition
           <br />
           transmite en vivo.
         </h2>
-        <p className="anim mt-5 font-[family-name:var(--font-outfit)] text-lg font-light text-muted">
+        <p className="anim mt-5 font-[family-name:var(--font-satoshi)] text-lg font-light text-muted">
           Agenda 30 minutos para platicar cómo arrancamos.
         </p>
         <a
           href="https://calendar.app.google/vTswBoXFYyKLH3TF7"
           target="_blank"
           rel="noopener noreferrer"
-          className="anim mt-8 inline-block rounded-lg bg-magenta px-8 py-4 font-[family-name:var(--font-outfit)] text-[15px] font-semibold text-white transition-all duration-200 hover:scale-[1.02] hover:bg-magenta-hover hover:shadow-[0_0_40px_rgba(255,45,107,0.3)] active:scale-[0.98]"
+          className="anim mt-8 inline-block rounded-lg bg-magenta px-8 py-4 font-[family-name:var(--font-satoshi)] text-[15px] font-semibold text-white transition-all duration-200 hover:scale-[1.02] hover:bg-magenta-hover hover:shadow-[0_0_40px_rgba(255,45,107,0.3)] active:scale-[0.98]"
         >
           Agendar llamada →
         </a>
-        <p className="anim mt-4 font-[family-name:var(--font-outfit)] text-sm text-muted">
+        <p className="anim mt-4 font-[family-name:var(--font-satoshi)] text-sm text-muted">
           O responde este mensaje directamente.
         </p>
 
@@ -432,7 +432,7 @@ function SlideNextStep({ active }: { active: boolean }) {
             <text
               x="62"
               y="43"
-              fontFamily="var(--font-syne), Syne, sans-serif"
+              fontFamily="var(--font-satoshi), Satoshi, sans-serif"
               fontWeight="800"
               fontSize="44"
               fill="#6B6B88"

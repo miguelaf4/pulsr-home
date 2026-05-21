@@ -20,9 +20,10 @@
   --color-cyan: #00D4CC;
 
   /* Fonts */
-  --font-display: var(--font-syne);
-  --font-body: var(--font-outfit);
-  --font-mono: var(--font-mono);
+  --font-satoshi: "Satoshi", sans-serif;
+  --font-display: var(--font-satoshi);
+  --font-body: var(--font-satoshi);
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
 }
 
 /* Base */
@@ -34,7 +35,7 @@ body {
 html {
   background-color: var(--color-void);
   color: var(--color-text);
-  font-family: var(--font-body), sans-serif;
+  font-family: "Satoshi", var(--font-body), sans-serif;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

@@ -50,13 +50,13 @@ export default function FreeAnalysis() {
           Análisis Gratuito
         </span>
 
-        <h2 className="analysis-headline mx-auto mt-5 max-w-2xl font-[family-name:var(--font-syne)] text-3xl font-bold leading-[1.15] text-white sm:text-4xl lg:text-[48px]">
+        <h2 className="analysis-headline mx-auto mt-5 max-w-2xl font-[family-name:var(--font-satoshi)] text-3xl font-bold leading-[1.15] text-white sm:text-4xl lg:text-[48px]">
           ¿Cómo se ve tu categoría
           <br />
           en TikTok Shop?
         </h2>
 
-        <p className="analysis-body mx-auto mt-6 max-w-xl font-[family-name:var(--font-outfit)] text-lg font-light leading-relaxed text-text">
+        <p className="analysis-body mx-auto mt-6 max-w-xl font-[family-name:var(--font-satoshi)] text-lg font-light leading-relaxed text-text">
           Te preparamos un análisis personalizado de tu marca: competidores
           activos, oportunidad de mercado, productos con mayor potencial, y una
           estrategia recomendada. Gratis, en menos de 48 horas.
@@ -67,7 +67,7 @@ export default function FreeAnalysis() {
             href="https://calendar.app.google/vTswBoXFYyKLH3TF7"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-lg bg-magenta px-10 py-4 font-[family-name:var(--font-outfit)] text-[15px] font-semibold text-white transition-all duration-200 hover:scale-[1.02] hover:bg-magenta-hover hover:shadow-[0_0_40px_rgba(255,45,107,0.3)] active:scale-[0.98]"
+            className="rounded-lg bg-magenta px-10 py-4 font-[family-name:var(--font-satoshi)] text-[15px] font-semibold text-white transition-all duration-200 hover:scale-[1.02] hover:bg-magenta-hover hover:shadow-[0_0_40px_rgba(255,45,107,0.3)] active:scale-[0.98]"
           >
             Solicita tu análisis
             <span className="ml-2">→</span>

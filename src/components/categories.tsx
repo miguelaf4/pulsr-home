@@ -32,7 +32,7 @@ function DataViz() {
           <p className="font-mono text-[9px] tracking-[0.2em] uppercase text-muted">
             Análisis de categoría
           </p>
-          <p className="mt-1 font-[family-name:var(--font-syne)] text-sm font-bold text-white">
+          <p className="mt-1 font-[family-name:var(--font-satoshi)] text-sm font-bold text-white">
             Suplementos · TikTok Shop MX
           </p>
         </div>
@@ -75,7 +75,7 @@ function DataViz() {
             <p className="font-mono text-[9px] uppercase text-muted">
               Potencial
             </p>
-            <p className="font-[family-name:var(--font-syne)] text-lg font-extrabold text-magenta">
+            <p className="font-[family-name:var(--font-satoshi)] text-lg font-extrabold text-magenta">
               $78K
             </p>
           </div>
@@ -83,7 +83,7 @@ function DataViz() {
             <p className="font-mono text-[9px] uppercase text-muted">
               Competidores
             </p>
-            <p className="font-[family-name:var(--font-syne)] text-lg font-extrabold text-white">
+            <p className="font-[family-name:var(--font-satoshi)] text-lg font-extrabold text-white">
               12
             </p>
           </div>
@@ -91,7 +91,7 @@ function DataViz() {
             <p className="font-mono text-[9px] uppercase text-muted">
               Gap
             </p>
-            <p className="font-[family-name:var(--font-syne)] text-lg font-extrabold text-white">
+            <p className="font-[family-name:var(--font-satoshi)] text-lg font-extrabold text-white">
               Alto
             </p>
           </div>
@@ -156,7 +156,7 @@ export default function Categories() {
           Tu Ventaja
         </span>
 
-        <h2 className="ventaja-headline mt-5 max-w-xl font-[family-name:var(--font-syne)] text-3xl font-bold leading-[1.15] text-white sm:text-4xl lg:text-[48px]">
+        <h2 className="ventaja-headline mt-5 max-w-xl font-[family-name:var(--font-satoshi)] text-3xl font-bold leading-[1.15] text-white sm:text-4xl lg:text-[48px]">
           No adivinamos.
           <br />
           Operamos con datos.
@@ -167,10 +167,10 @@ export default function Categories() {
           <div className="space-y-8">
             {BLOCKS.map((block) => (
               <div key={block.title} className="ventaja-block">
-                <h3 className="font-[family-name:var(--font-syne)] text-lg font-bold text-white">
+                <h3 className="font-[family-name:var(--font-satoshi)] text-lg font-bold text-white">
                   {block.title}
                 </h3>
-                <p className="mt-2 max-w-[500px] font-[family-name:var(--font-outfit)] text-[15px] font-light leading-relaxed text-text">
+                <p className="mt-2 max-w-[500px] font-[family-name:var(--font-satoshi)] text-[15px] font-light leading-relaxed text-text">
                   {block.body}
                 </p>
               </div>

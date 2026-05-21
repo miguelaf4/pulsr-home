@@ -53,13 +53,13 @@ export default function Talent() {
             Talento
           </span>
 
-          <h2 className="talent-headline mt-5 font-[family-name:var(--font-syne)] text-3xl font-bold leading-[1.15] text-white sm:text-4xl lg:text-[48px]">
+          <h2 className="talent-headline mt-5 font-[family-name:var(--font-satoshi)] text-3xl font-bold leading-[1.15] text-white sm:text-4xl lg:text-[48px]">
             ¿Sabes vender
             <br />
             frente a cámara?
           </h2>
 
-          <p className="talent-body mt-6 max-w-[500px] font-[family-name:var(--font-outfit)] text-lg font-light leading-relaxed text-text">
+          <p className="talent-body mt-6 max-w-[500px] font-[family-name:var(--font-satoshi)] text-lg font-light leading-relaxed text-text">
             Buscamos hosts con energía, facilidad de palabra, y hambre de crecer
             en live commerce. Pago competitivo por hora + bonos por performance +
             participación en ventas.
@@ -69,7 +69,7 @@ export default function Talent() {
             href="https://docs.google.com/forms/d/e/1FAIpQLSePBUziBctpZADAnetJ1-ua2i-jDmeye1wj49TM4q56Gdcg0Q/viewform?usp=publish-editor"
             target="_blank"
             rel="noopener noreferrer"
-            className="talent-cta mt-8 inline-flex items-center gap-2 rounded-lg border border-border px-8 py-4 font-[family-name:var(--font-outfit)] text-[15px] font-medium text-white transition-all duration-200 hover:border-magenta hover:text-magenta"
+            className="talent-cta mt-8 inline-flex items-center gap-2 rounded-lg border border-border px-8 py-4 font-[family-name:var(--font-satoshi)] text-[15px] font-medium text-white transition-all duration-200 hover:border-magenta hover:text-magenta"
           >
             Aplica como host
             <svg viewBox="0 0 20 20" fill="none" className="h-4 w-4">

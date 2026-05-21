@@ -51,13 +51,13 @@ export default function FinalCta() {
           Empecemos
         </span>
 
-        <h2 className="cta-headline mx-auto mt-6 max-w-3xl font-[family-name:var(--font-syne)] text-3xl font-bold leading-[1.15] text-white sm:text-4xl lg:text-[52px]">
+        <h2 className="cta-headline mx-auto mt-6 max-w-3xl font-[family-name:var(--font-satoshi)] text-3xl font-bold leading-[1.15] text-white sm:text-4xl lg:text-[52px]">
           ¿Tu marca está lista
           <br />
           para vender en vivo?
         </h2>
 
-        <p className="cta-sub mx-auto mt-6 max-w-lg font-[family-name:var(--font-outfit)] text-lg font-light leading-relaxed text-text">
+        <p className="cta-sub mx-auto mt-6 max-w-lg font-[family-name:var(--font-satoshi)] text-lg font-light leading-relaxed text-text">
           Empieza con un análisis gratuito de tu categoría.  Solo datos reales sobre tu oportunidad. 30 minutos
         </p>
 
@@ -66,13 +66,13 @@ export default function FinalCta() {
             href="https://calendar.app.google/vTswBoXFYyKLH3TF7"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-lg bg-magenta px-10 py-4 font-[family-name:var(--font-outfit)] text-[15px] font-semibold text-white transition-all duration-200 hover:scale-[1.02] hover:bg-magenta-hover hover:shadow-[0_0_40px_rgba(255,45,107,0.3)] active:scale-[0.98]"
+            className="rounded-lg bg-magenta px-10 py-4 font-[family-name:var(--font-satoshi)] text-[15px] font-semibold text-white transition-all duration-200 hover:scale-[1.02] hover:bg-magenta-hover hover:shadow-[0_0_40px_rgba(255,45,107,0.3)] active:scale-[0.98]"
           >
             Solicita tu análisis gratis
             <span className="ml-2">→</span>
           </a>
           <div className="flex flex-col items-center gap-4 mt-2">
-            <p className="font-[family-name:var(--font-outfit)] text-sm text-muted">
+            <p className="font-[family-name:var(--font-satoshi)] text-sm text-muted">
               O ponte en contacto
             </p>
             <a
@@ -80,9 +80,9 @@ export default function FinalCta() {
               className="group flex items-center gap-4 rounded-xl border border-white/5 bg-white/5 p-3 pr-6 transition-all duration-300 hover:border-magenta/30 hover:bg-white/10"
             >
               <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-magenta/10 text-magenta transition-colors duration-300 group-hover:bg-magenta group-hover:text-white">
-                <span className="font-[family-name:var(--font-syne)] text-lg font-bold">M</span>
+                <span className="font-[family-name:var(--font-satoshi)] text-lg font-bold">M</span>
               </div>
-              <div className="text-left font-[family-name:var(--font-outfit)]">
+              <div className="text-left font-[family-name:var(--font-satoshi)]">
                 <h3 className="text-[15px] font-medium text-white">
                   Miguel Arrañaga
                 </h3>

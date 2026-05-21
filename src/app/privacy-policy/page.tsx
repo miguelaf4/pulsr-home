@@ -28,7 +28,7 @@ export default function PrivacyPolicyPage() {
               <text
                 x="38"
                 y="26"
-                fontFamily="var(--font-syne), Syne, sans-serif"
+                fontFamily="var(--font-satoshi), Satoshi, sans-serif"
                 fontWeight="800"
                 fontSize="28"
                 fill="#F5F5FA"
@@ -86,7 +86,7 @@ export default function PrivacyPolicyPage() {
 
 function SectionTitle({ children }: { children: React.ReactNode }) {
   return (
-    <h2 className="mt-12 mb-4 font-[family-name:var(--font-syne)] text-xl font-bold text-white tracking-wide">
+    <h2 className="mt-12 mb-4 font-[family-name:var(--font-satoshi)] text-xl font-bold text-white tracking-wide">
       {children}
     </h2>
   );
@@ -94,7 +94,7 @@ function SectionTitle({ children }: { children: React.ReactNode }) {
 
 function SubSection({ children }: { children: React.ReactNode }) {
   return (
-    <h3 className="mt-8 mb-3 font-[family-name:var(--font-syne)] text-base font-semibold text-light tracking-wide">
+    <h3 className="mt-8 mb-3 font-[family-name:var(--font-satoshi)] text-base font-semibold text-light tracking-wide">
       {children}
     </h3>
   );
@@ -102,7 +102,7 @@ function SubSection({ children }: { children: React.ReactNode }) {
 
 function P({ children }: { children: React.ReactNode }) {
   return (
-    <p className="mb-4 font-[family-name:var(--font-outfit)] text-[15px] leading-relaxed text-text">
+    <p className="mb-4 font-[family-name:var(--font-satoshi)] text-[15px] leading-relaxed text-text">
       {children}
     </p>
   );
@@ -110,7 +110,7 @@ function P({ children }: { children: React.ReactNode }) {
 
 function UL({ children }: { children: React.ReactNode }) {
   return (
-    <ul className="mb-4 ml-5 list-disc space-y-2 font-[family-name:var(--font-outfit)] text-[15px] leading-relaxed text-text">
+    <ul className="mb-4 ml-5 list-disc space-y-2 font-[family-name:var(--font-satoshi)] text-[15px] leading-relaxed text-text">
       {children}
     </ul>
   );
@@ -124,7 +124,7 @@ function EnglishPolicy() {
       <p className="mb-2 font-mono text-xs tracking-widest uppercase text-magenta">
         Privacy Policy
       </p>
-      <h1 className="mb-4 font-[family-name:var(--font-syne)] text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
+      <h1 className="mb-4 font-[family-name:var(--font-satoshi)] text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
         Privacy Policy
       </h1>
       <p className="mb-10 font-mono text-xs text-muted">
@@ -265,7 +265,7 @@ function EnglishPolicy() {
       <P>
         If you have questions about this Privacy Policy, wish to exercise your privacy rights, or need to submit an ARCO rights request under Mexican law, please contact us at:
       </P>
-      <div className="rounded-lg border border-border bg-surface p-6 font-[family-name:var(--font-outfit)] text-[15px] leading-relaxed">
+      <div className="rounded-lg border border-border bg-surface p-6 font-[family-name:var(--font-satoshi)] text-[15px] leading-relaxed">
         <p className="font-semibold text-white">PULSR</p>
         <p className="mt-1 text-text">Email: miguel@pulsr.live</p>
         <p className="text-text">Website: https://pulsr.live</p>
@@ -282,7 +282,7 @@ function SpanishPolicy() {
       <p className="mb-2 font-mono text-xs tracking-widest uppercase text-magenta">
         Aviso de Privacidad
       </p>
-      <h1 className="mb-4 font-[family-name:var(--font-syne)] text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
+      <h1 className="mb-4 font-[family-name:var(--font-satoshi)] text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
         Aviso de Privacidad
       </h1>
       <p className="mb-10 font-mono text-xs text-muted">
@@ -423,7 +423,7 @@ function SpanishPolicy() {
       <P>
         Si tiene preguntas sobre este Aviso de Privacidad, desea ejercer sus derechos de privacidad o necesita presentar una solicitud de derechos ARCO conforme a la legislaci&oacute;n mexicana, puede contactarnos en:
       </P>
-      <div className="rounded-lg border border-border bg-surface p-6 font-[family-name:var(--font-outfit)] text-[15px] leading-relaxed">
+      <div className="rounded-lg border border-border bg-surface p-6 font-[family-name:var(--font-satoshi)] text-[15px] leading-relaxed">
         <p className="font-semibold text-white">PULSR</p>
         <p className="mt-1 text-text">Correo electr&oacute;nico: miguel@pulsr.live</p>
         <p className="text-text">Sitio web: https://pulsr.live</p>

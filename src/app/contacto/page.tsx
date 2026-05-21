@@ -32,10 +32,10 @@ export default function ContactoPage() {
              <span className="font-mono text-xs font-medium tracking-[0.25em] uppercase text-magenta">
                 Contacto
              </span>
-             <h1 className="mt-4 font-[family-name:var(--font-syne)] text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-[56px]">
+             <h1 className="mt-4 font-[family-name:var(--font-satoshi)] text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-[56px]">
                 Hablemos de tu marca
              </h1>
-             <p className="mx-auto mt-6 max-w-xl font-[family-name:var(--font-outfit)] text-lg text-text">
+             <p className="mx-auto mt-6 max-w-xl font-[family-name:var(--font-satoshi)] text-lg text-text">
                Llena el formulario abajo o reserva un espacio en nuestro calendario para un análisis inicial.
              </p>
           </div>
@@ -52,10 +52,10 @@ export default function ContactoPage() {
               
               {/* Extra contact methods just in case */}
               <div className="rounded-2xl border border-white/5 bg-surface/50 p-6 backdrop-blur-md">
-                <h3 className="font-[family-name:var(--font-syne)] text-lg font-bold text-white">
+                <h3 className="font-[family-name:var(--font-satoshi)] text-lg font-bold text-white">
                   Información Directa
                 </h3>
-                <div className="mt-6 flex flex-col gap-5 font-[family-name:var(--font-outfit)]">
+                <div className="mt-6 flex flex-col gap-5 font-[family-name:var(--font-satoshi)]">
                   <div>
                     <p className="text-sm text-muted">Email</p>
                     <a href="mailto:miguel@pulsr.live" className="mt-1 block text-base text-white transition-colors hover:text-magenta">

@@ -297,7 +297,7 @@ export default function Hero({ ready = true }: { ready?: boolean }) {
       <div className="hero-content relative z-10 mx-auto grid w-full max-w-[1200px] grid-cols-1 items-center gap-10 px-6 py-16 md:grid-cols-[1fr_280px] md:gap-10 lg:grid-cols-[1fr_300px] lg:gap-14 lg:px-20 lg:py-0">
         {/* Left — text */}
         <div>
-          <h1 className="hero-headline font-[family-name:var(--font-syne)] text-[32px] font-extrabold leading-[1.1] text-white sm:text-[40px] lg:text-[52px]">
+          <h1 className="hero-headline font-[family-name:var(--font-satoshi)] text-[32px] font-extrabold leading-[1.1] text-white sm:text-[40px] lg:text-[52px]">
             Tu marca en vivo.
             <br />
             <span className="bg-gradient-to-r from-magenta via-purple to-blue bg-clip-text text-transparent">
@@ -305,7 +305,7 @@ export default function Hero({ ready = true }: { ready?: boolean }) {
             </span>
           </h1>
 
-          <p className="hero-sub mt-5 max-w-md font-[family-name:var(--font-outfit)] text-base font-light leading-relaxed text-text lg:text-lg">
+          <p className="hero-sub mt-5 max-w-md font-[family-name:var(--font-satoshi)] text-base font-light leading-relaxed text-text lg:text-lg">
             Operamos tus lives en TikTok Shop México — todo incluido.
           </p>
 
@@ -314,7 +314,7 @@ export default function Hero({ ready = true }: { ready?: boolean }) {
             {PERKS.map((perk) => (
               <li key={perk.icon} className="hero-perk flex items-center gap-2.5">
                 <PerkIcon type={perk.icon} />
-                <span className="font-[family-name:var(--font-outfit)] text-sm text-text">
+                <span className="font-[family-name:var(--font-satoshi)] text-sm text-text">
                   {perk.label}
                 </span>
               </li>
@@ -327,13 +327,13 @@ export default function Hero({ ready = true }: { ready?: boolean }) {
               href="https://calendar.app.google/vTswBoXFYyKLH3TF7"
               target="_blank"
               rel="noopener noreferrer"
-              className="hero-cta-btn rounded-lg bg-magenta px-7 py-3.5 text-center font-[family-name:var(--font-outfit)] text-[15px] font-semibold text-white transition-all duration-200 hover:scale-[1.02] hover:bg-magenta-hover hover:shadow-[0_0_30px_rgba(255,45,107,0.3)] active:scale-[0.98]"
+              className="hero-cta-btn rounded-lg bg-magenta px-7 py-3.5 text-center font-[family-name:var(--font-satoshi)] text-[15px] font-semibold text-white transition-all duration-200 hover:scale-[1.02] hover:bg-magenta-hover hover:shadow-[0_0_30px_rgba(255,45,107,0.3)] active:scale-[0.98]"
             >
               Solicita tu análisis gratis
             </a>
             <a
               href="#demo-reel"
-              className="hero-cta-btn group flex items-center justify-center gap-2 rounded-lg border border-border px-7 py-3.5 font-[family-name:var(--font-outfit)] text-[15px] font-medium text-white transition-all duration-200 hover:border-magenta hover:text-magenta"
+              className="hero-cta-btn group flex items-center justify-center gap-2 rounded-lg border border-border px-7 py-3.5 font-[family-name:var(--font-satoshi)] text-[15px] font-medium text-white transition-all duration-200 hover:border-magenta hover:text-magenta"
             >
               <span>Ver demo reel</span>
               <svg viewBox="0 0 20 20" fill="none" className="h-4 w-4">
@@ -354,7 +354,7 @@ export default function Hero({ ready = true }: { ready?: boolean }) {
                 key={i}
                 className={`hero-float-stat absolute z-20 rounded-lg border border-border/60 bg-surface/80 px-2.5 py-1.5 backdrop-blur-md will-change-transform ${stat.pos}`}
               >
-                <p className="font-[family-name:var(--font-syne)] text-sm sm:text-base font-extrabold leading-none text-white">
+                <p className="font-[family-name:var(--font-satoshi)] text-sm sm:text-base font-extrabold leading-none text-white">
                   {stat.value}
                 </p>
                 <p className="mt-0.5 font-mono text-[8px] tracking-wider uppercase text-muted">

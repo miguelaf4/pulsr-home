@@ -108,7 +108,7 @@ export default function IntroAnimation({ onComplete }: { onComplete: () => void 
             strokeDashoffset="200"
           />
         </svg>
-        <span className="intro-wordmark font-[family-name:var(--font-syne)] text-4xl font-extrabold tracking-[0.15em] text-white">
+        <span className="intro-wordmark font-[family-name:var(--font-satoshi)] text-4xl font-extrabold tracking-[0.15em] text-white">
           PULSR
         </span>
       </div>

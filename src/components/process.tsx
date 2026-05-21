@@ -70,7 +70,7 @@ export default function Process() {
           Proceso
         </span>
 
-        <h2 className="process-headline mt-5 max-w-xl font-[family-name:var(--font-syne)] text-3xl font-bold leading-[1.15] text-white sm:text-4xl lg:text-[48px]">
+        <h2 className="process-headline mt-5 max-w-xl font-[family-name:var(--font-satoshi)] text-3xl font-bold leading-[1.15] text-white sm:text-4xl lg:text-[48px]">
           De cero a en vivo
           <br />
           en 2 semanas.
@@ -95,10 +95,10 @@ export default function Process() {
                 {/* Vertical connector (mobile/tablet) */}
                 <div className="ml-7 h-6 w-[1px] border-l border-dashed border-border lg:hidden" />
 
-                <h3 className="mt-4 font-[family-name:var(--font-syne)] text-lg font-bold text-white lg:mt-6">
+                <h3 className="mt-4 font-[family-name:var(--font-satoshi)] text-lg font-bold text-white lg:mt-6">
                   {step.title}
                 </h3>
-                <p className="mt-2 max-w-[260px] font-[family-name:var(--font-outfit)] text-[15px] font-light leading-relaxed text-text">
+                <p className="mt-2 max-w-[260px] font-[family-name:var(--font-satoshi)] text-[15px] font-light leading-relaxed text-text">
                   {step.body}
                 </p>
               </div>

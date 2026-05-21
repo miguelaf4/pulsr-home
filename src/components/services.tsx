@@ -112,7 +112,7 @@ export default function Services() {
           Qué Hacemos
         </span>
 
-        <h2 className="services-headline mt-5 max-w-2xl font-[family-name:var(--font-syne)] text-3xl font-bold leading-[1.15] text-white sm:text-4xl lg:text-[48px]">
+        <h2 className="services-headline mt-5 max-w-2xl font-[family-name:var(--font-satoshi)] text-3xl font-bold leading-[1.15] text-white sm:text-4xl lg:text-[48px]">
           Tu producto. Nuestro estudio.
           <br />
           Ventas desde el día uno.
@@ -123,10 +123,10 @@ export default function Services() {
             <div key={service.title} className="group flex flex-col items-center md:items-start">
               <PhoneMockup index={i} clip={service.clip} />
               <div className="service-text mt-8 text-center md:text-left">
-                <h3 className="font-[family-name:var(--font-syne)] text-lg font-bold text-white">
+                <h3 className="font-[family-name:var(--font-satoshi)] text-lg font-bold text-white">
                   {service.title}
                 </h3>
-                <p className="mt-3 max-w-sm font-[family-name:var(--font-outfit)] text-[15px] font-light leading-relaxed text-text">
+                <p className="mt-3 max-w-sm font-[family-name:var(--font-satoshi)] text-[15px] font-light leading-relaxed text-text">
                   {service.body}
                 </p>
               </div>

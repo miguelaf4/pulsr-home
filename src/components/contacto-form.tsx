@@ -24,15 +24,15 @@ export default function ContactoForm() {
             <polyline points="22 4 12 14.01 9 11.01" />
           </svg>
         </div>
-        <h3 className="mt-6 font-[family-name:var(--font-syne)] text-2xl font-bold text-white">
+        <h3 className="mt-6 font-[family-name:var(--font-satoshi)] text-2xl font-bold text-white">
           ¡Mensaje enviado!
         </h3>
-        <p className="mt-3 max-w-[300px] font-[family-name:var(--font-outfit)] text-text">
+        <p className="mt-3 max-w-[300px] font-[family-name:var(--font-satoshi)] text-text">
           Gracias por escribirnos. Nuestro equipo revisará tu información y se pondrá en contacto muy pronto.
         </p>
         <button
           onClick={() => setStatus("idle")}
-          className="mt-8 font-[family-name:var(--font-outfit)] text-sm font-semibold tracking-wide text-magenta hover:text-magenta-hover transition-colors"
+          className="mt-8 font-[family-name:var(--font-satoshi)] text-sm font-semibold tracking-wide text-magenta hover:text-magenta-hover transition-colors"
         >
           Enviar otro mensaje
         </button>
@@ -43,15 +43,15 @@ export default function ContactoForm() {
   return (
     <div className="rounded-3xl border border-white/5 bg-surface p-6 sm:p-10">
       <div className="mb-8">
-        <h2 className="font-[family-name:var(--font-syne)] text-2xl font-bold text-white sm:text-3xl">
+        <h2 className="font-[family-name:var(--font-satoshi)] text-2xl font-bold text-white sm:text-3xl">
           Empieza a vender por lives hoy
         </h2>
-        <p className="mt-3 font-[family-name:var(--font-outfit)] text-[15px] text-text">
+        <p className="mt-3 font-[family-name:var(--font-satoshi)] text-[15px] text-text">
           Déjanos tus datos de contacto y cuéntanos un poco sobre tus objetivos con el Live Commerce.
         </p>
       </div>
 
-      <form onSubmit={handleSubmit} className="flex flex-col gap-5 font-[family-name:var(--font-outfit)]">
+      <form onSubmit={handleSubmit} className="flex flex-col gap-5 font-[family-name:var(--font-satoshi)]">
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
           <div className="flex flex-col gap-2">
             <label htmlFor="name" className="text-sm font-medium text-white/90">

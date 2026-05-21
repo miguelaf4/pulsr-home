@@ -145,7 +145,7 @@ export default function Stats() {
           El Mercado
         </span>
 
-        <h2 className="stats-headline mt-5 max-w-2xl font-[family-name:var(--font-syne)] text-3xl font-bold leading-[1.15] text-white sm:text-4xl lg:text-[48px]">
+        <h2 className="stats-headline mt-5 max-w-2xl font-[family-name:var(--font-satoshi)] text-3xl font-bold leading-[1.15] text-white sm:text-4xl lg:text-[48px]">
           El live shopping ya está aquí.
           <br />
           ¿Tu marca está vendiendo?
@@ -157,14 +157,14 @@ export default function Stats() {
               key={stat.value}
               className="stat-card group rounded-2xl border border-border bg-surface p-8 transition-all duration-300 hover:border-magenta/40 hover:shadow-[0_0_40px_rgba(255,45,107,0.08)]"
             >
-              <p className="font-[family-name:var(--font-syne)] text-5xl font-extrabold leading-none lg:text-[56px]">
+              <p className="font-[family-name:var(--font-satoshi)] text-5xl font-extrabold leading-none lg:text-[56px]">
                 <CountUp
                   target={Number(stat.value)}
                   prefix={stat.prefix}
                   suffix={stat.suffix}
                 />
               </p>
-              <p className="mt-3 font-[family-name:var(--font-outfit)] text-sm text-muted">
+              <p className="mt-3 font-[family-name:var(--font-satoshi)] text-sm text-muted">
                 {stat.label}
               </p>
               <p className="mt-4 font-mono text-[11px] text-border">
@@ -174,7 +174,7 @@ export default function Stats() {
           ))}
         </div>
 
-        <p className="stats-body mt-14 max-w-[640px] font-[family-name:var(--font-outfit)] text-lg font-light leading-relaxed text-text">
+        <p className="stats-body mt-14 max-w-[640px] font-[family-name:var(--font-satoshi)] text-lg font-light leading-relaxed text-text">
           TikTok Shop México crece más rápido que cualquier otro canal digital.
           Las marcas que hacen lives capturan audiencias que tus competidores no
           tocan. Las que no, dejan dinero sobre la mesa.
@@ -184,7 +184,7 @@ export default function Stats() {
           href="https://calendar.app.google/vTswBoXFYyKLH3TF7"
           target="_blank"
           rel="noopener noreferrer"
-          className="stats-body mt-6 inline-flex items-center gap-1.5 font-[family-name:var(--font-outfit)] text-[15px] text-magenta transition-colors hover:text-magenta-hover"
+          className="stats-body mt-6 inline-flex items-center gap-1.5 font-[family-name:var(--font-satoshi)] text-[15px] text-magenta transition-colors hover:text-magenta-hover"
         >
           ¿Quieres ver dónde está tu marca vs. tu competencia? Solicita un análisis gratuito
           <span className="transition-transform group-hover:translate-x-0.5">→</span>

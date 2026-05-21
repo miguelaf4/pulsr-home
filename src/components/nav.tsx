@@ -61,7 +61,7 @@ export default function Nav() {
               <text
                 x="62"
                 y="43"
-                fontFamily="var(--font-syne), Syne, sans-serif"
+                fontFamily="var(--font-satoshi), Satoshi, sans-serif"
                 fontWeight="800"
                 fontSize="44"
                 fill="#F5F5FA"
@@ -78,7 +78,7 @@ export default function Nav() {
               <a
                 key={link.href}
                 href={link.href}
-                className="group relative font-[family-name:var(--font-outfit)] text-[15px] font-medium text-text transition-colors duration-200 hover:text-white"
+                className="group relative font-[family-name:var(--font-satoshi)] text-[15px] font-medium text-text transition-colors duration-200 hover:text-white"
               >
                 {link.label}
                 <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-magenta transition-all duration-300 group-hover:w-full" />
@@ -88,7 +88,7 @@ export default function Nav() {
               href="https://calendar.app.google/vTswBoXFYyKLH3TF7"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-lg bg-magenta px-6 py-2.5 font-[family-name:var(--font-outfit)] text-sm font-semibold text-white transition-all duration-200 hover:scale-[1.02] hover:bg-magenta-hover hover:shadow-[0_0_30px_rgba(255,45,107,0.3)] active:scale-[0.98]"
+              className="rounded-lg bg-magenta px-6 py-2.5 font-[family-name:var(--font-satoshi)] text-sm font-semibold text-white transition-all duration-200 hover:scale-[1.02] hover:bg-magenta-hover hover:shadow-[0_0_30px_rgba(255,45,107,0.3)] active:scale-[0.98]"
             >
               Solicita tu análisis gratis
             </a>
@@ -120,7 +120,7 @@ export default function Nav() {
               key={link.href}
               href={link.href}
               onClick={() => setMobileOpen(false)}
-              className="font-[family-name:var(--font-syne)] text-3xl font-bold text-white transition-colors hover:text-magenta"
+              className="font-[family-name:var(--font-satoshi)] text-3xl font-bold text-white transition-colors hover:text-magenta"
             >
               {link.label}
             </a>
@@ -130,7 +130,7 @@ export default function Nav() {
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setMobileOpen(false)}
-            className="mt-4 rounded-lg bg-magenta px-8 py-3 font-[family-name:var(--font-outfit)] text-base font-semibold text-white transition-all hover:bg-magenta-hover"
+            className="mt-4 rounded-lg bg-magenta px-8 py-3 font-[family-name:var(--font-satoshi)] text-base font-semibold text-white transition-all hover:bg-magenta-hover"
           >
             Solicita tu análisis gratis
           </a>

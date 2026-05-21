@@ -15,7 +15,7 @@ export default function Footer() {
             <text
               x="38"
               y="26"
-              fontFamily="var(--font-syne), Syne, sans-serif"
+              fontFamily="var(--font-satoshi), Satoshi, sans-serif"
               fontWeight="800"
               fontSize="28"
               fill="#F5F5FA"
@@ -33,19 +33,19 @@ export default function Footer() {
         <div className="flex items-center gap-6">
           <a
             href="#servicios"
-            className="font-[family-name:var(--font-outfit)] text-sm text-muted transition-colors hover:text-white"
+            className="font-[family-name:var(--font-satoshi)] text-sm text-muted transition-colors hover:text-white"
           >
             Servicios
           </a>
           <a
             href="#talento"
-            className="font-[family-name:var(--font-outfit)] text-sm text-muted transition-colors hover:text-white"
+            className="font-[family-name:var(--font-satoshi)] text-sm text-muted transition-colors hover:text-white"
           >
             Talento
           </a>
           <a
             href="#contacto"
-            className="font-[family-name:var(--font-outfit)] text-sm text-muted transition-colors hover:text-white"
+            className="font-[family-name:var(--font-satoshi)] text-sm text-muted transition-colors hover:text-white"
           >
             Contacto
           </a>

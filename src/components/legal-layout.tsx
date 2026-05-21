@@ -12,7 +12,7 @@ const PulsrLogo = () => (
     <text
       x="38"
       y="26"
-      fontFamily="var(--font-syne), Syne, sans-serif"
+      fontFamily="var(--font-satoshi), Satoshi, sans-serif"
       fontWeight="800"
       fontSize="28"
       fill="#F5F5FA"
@@ -43,19 +43,19 @@ export default function LegalLayout({
           <nav className="flex items-center gap-4">
             <Link
               href="/terms"
-              className="font-[family-name:var(--font-outfit)] text-xs text-muted transition-colors hover:text-white"
+              className="font-[family-name:var(--font-satoshi)] text-xs text-muted transition-colors hover:text-white"
             >
               Terms
             </Link>
             <Link
               href="/refunds"
-              className="font-[family-name:var(--font-outfit)] text-xs text-muted transition-colors hover:text-white"
+              className="font-[family-name:var(--font-satoshi)] text-xs text-muted transition-colors hover:text-white"
             >
               Refunds
             </Link>
             <Link
               href="/privacy"
-              className="font-[family-name:var(--font-outfit)] text-xs text-muted transition-colors hover:text-white"
+              className="font-[family-name:var(--font-satoshi)] text-xs text-muted transition-colors hover:text-white"
             >
               Privacy
             </Link>
@@ -65,7 +65,7 @@ export default function LegalLayout({
 
       {/* Content */}
       <main className="mx-auto max-w-[900px] px-6 py-16 lg:py-24">
-        <h1 className="font-[family-name:var(--font-syne)] text-3xl font-bold tracking-tight text-white lg:text-4xl">
+        <h1 className="font-[family-name:var(--font-satoshi)] text-3xl font-bold tracking-tight text-white lg:text-4xl">
           {title}
         </h1>
         <p className="mt-3 font-mono text-xs tracking-wider text-muted">
@@ -86,19 +86,19 @@ export default function LegalLayout({
           <nav className="flex items-center gap-5">
             <Link
               href="/terms"
-              className="font-[family-name:var(--font-outfit)] text-xs text-muted transition-colors hover:text-white"
+              className="font-[family-name:var(--font-satoshi)] text-xs text-muted transition-colors hover:text-white"
             >
               Terms of Service
             </Link>
             <Link
               href="/refunds"
-              className="font-[family-name:var(--font-outfit)] text-xs text-muted transition-colors hover:text-white"
+              className="font-[family-name:var(--font-satoshi)] text-xs text-muted transition-colors hover:text-white"
             >
               Refund Policy
             </Link>
             <Link
               href="/privacy"
-              className="font-[family-name:var(--font-outfit)] text-xs text-muted transition-colors hover:text-white"
+              className="font-[family-name:var(--font-satoshi)] text-xs text-muted transition-colors hover:text-white"
             >
               Privacy Policy
             </Link>
