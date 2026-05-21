@@ -134,16 +134,16 @@ export default function TermsPage() {
           basis.
         </p>
         <p>
-          All payments are processed by{" "}
-          <strong className="text-white">Lemon Squeezy</strong>, which acts as
-          the merchant of record for all transactions. When you subscribe, your
-          billing relationship is with Lemon Squeezy. Your subscription
-          automatically renews each month until you cancel.
+          Payments and billing are handled by our third-party payment processor.
+          When you subscribe, your billing relationship may be with this
+          processor depending on their role. Your subscription automatically
+          renews each month until you cancel through your account settings or by
+          contacting support.
         </p>
         <p>
-          You can cancel your subscription at any time through your account
-          settings. After cancellation, you retain access to Pro features until
-          the end of your current billing period. See our{" "}
+          You can cancel your subscription at any time. After cancellation, you
+          retain access to Pro features until the end of your current billing
+          period. See our{" "}
           <Link href="/refunds" className="text-magenta hover:text-magenta-hover underline underline-offset-2">
             Refund Policy
           </Link>{" "}

@@ -25,9 +25,9 @@ export default function RefundPolicyPage() {
         <p>
           PULSR is a subscription-based service offering animated overlay widgets
           for live commerce streamers. We offer a free tier and a Pro tier at
-          $10/month (USD), billed monthly. All payments are processed by{" "}
-          <strong className="text-white">Lemon Squeezy</strong>, which acts as
-          the merchant of record for all billing operations.
+          $10/month (USD), billed monthly. All payments are processed by our
+          third-party payment processor, which handles billing operations on our
+          behalf.
         </p>
       </section>
 
@@ -109,11 +109,10 @@ export default function RefundPolicyPage() {
       <section className="space-y-4">
         <H2>Payment Processing</H2>
         <p>
-          All billing is handled by{" "}
-          <strong className="text-white">Lemon Squeezy</strong>, our merchant of
-          record. Lemon Squeezy manages payment processing, invoicing, tax
-          collection, and billing operations on our behalf. Charges on your
-          statement may appear under Lemon Squeezy&apos;s name.
+          All billing is handled by our third-party payment processor, which
+          manages payment processing, invoicing, tax collection, and billing
+          operations on our behalf. Charges on your bank statement may appear
+          under the payment processor&apos;s name rather than PULSR.
         </p>
         <p>
           If you have a billing dispute, please contact us first at{" "}

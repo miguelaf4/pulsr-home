@@ -53,7 +53,7 @@ export default function PrivacyPolicyPage() {
             When you create an account, we collect your email address and name.
             Passwords are stored as cryptographic hashes — we never store your
             password in plain text. Authentication is managed through our
-            infrastructure provider (Supabase Auth).
+            database and authentication provider.
           </p>
         </div>
 
@@ -78,12 +78,11 @@ export default function PrivacyPolicyPage() {
         <div className="space-y-3">
           <H3>Payment Data</H3>
           <p>
-            Payment processing is handled entirely by{" "}
-            <strong className="text-white">Lemon Squeezy</strong>, our merchant
-            of record. We do not collect, store, or have access to your credit
-            card numbers or full payment details. Lemon Squeezy provides us with
-            basic transaction information (subscription status, billing dates)
-            necessary to manage your account.
+            Payment processing is handled entirely by our third-party payment
+            processor. We do not collect, store, or have access to your credit
+            card numbers or full payment details. Our payment processor provides
+            us with basic transaction information (subscription status, billing
+            dates) necessary to manage your account.
           </p>
         </div>
 
@@ -120,8 +119,8 @@ export default function PrivacyPolicyPage() {
           </li>
           <li>
             <strong className="text-white">Billing:</strong> Manage your
-            subscription status and coordinate with Lemon Squeezy for payment
-            processing.
+            subscription status and coordinate with our payment processor for
+            billing.
           </li>
           <li>
             <strong className="text-white">Communications:</strong> Send you
@@ -141,40 +140,36 @@ export default function PrivacyPolicyPage() {
         </p>
 
         <div className="space-y-3">
-          <H3>Lemon Squeezy</H3>
+          <H3>Payment Processor</H3>
           <p>
-            Payment processing and merchant of record. Lemon Squeezy receives
-            your billing information to process subscription payments, handle
-            invoicing, and manage tax obligations. See{" "}
-            <span className="text-muted">
-              Lemon Squeezy&apos;s privacy policy
-            </span>{" "}
-            for details on how they handle your payment data.
+            Our third-party payment processor receives your billing information
+            to process subscription payments, handle invoicing, and manage tax
+            obligations. Refer to the processor&apos;s own privacy policy for
+            details on how they handle your payment data.
           </p>
         </div>
 
         <div className="space-y-3">
-          <H3>Supabase</H3>
+          <H3>Database &amp; Authentication Provider</H3>
           <p>
-            Database and authentication infrastructure. Your account data,
-            configurations, and application data are stored on Supabase&apos;s
-            hosted infrastructure.
+            Your account data, configurations, and application data are stored
+            on our hosted database and authentication infrastructure.
           </p>
         </div>
 
         <div className="space-y-3">
-          <H3>Vercel</H3>
+          <H3>Hosting Provider</H3>
           <p>
-            Web hosting and content delivery. Vercel serves the PULSR web
+            Our web hosting and content delivery provider serves the PULSR web
             application and may process basic request-level data (IP addresses,
             user agents) as part of standard web hosting operations.
           </p>
         </div>
 
         <div className="space-y-3">
-          <H3>Vercel Analytics</H3>
+          <H3>Analytics</H3>
           <p>
-            We use Vercel Analytics to collect anonymized, aggregated usage
+            We use an analytics service to collect anonymized, aggregated usage
             metrics (page views, performance data). This data does not include
             personally identifiable information.
           </p>
@@ -200,8 +195,8 @@ export default function PrivacyPolicyPage() {
             dashboard settings and preferences.
           </li>
           <li>
-            <strong className="text-white">Analytics:</strong> Vercel Analytics
-            collects anonymized performance and usage metrics.
+            <strong className="text-white">Analytics:</strong> Our analytics
+            service collects anonymized performance and usage metrics.
           </li>
         </ul>
         <p>
