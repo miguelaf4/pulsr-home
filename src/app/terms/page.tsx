@@ -198,10 +198,10 @@ export default function TermsPage() {
           account at any time through your account settings or by contacting us
           at{" "}
           <a
-            href="mailto:support@pulsr.live"
+            href="mailto:miguel@pulsr.live"
             className="text-magenta hover:text-magenta-hover underline underline-offset-2"
           >
-            support@pulsr.live
+            miguel@pulsr.live
           </a>
           . Cancellation takes effect at the end of your current billing period.
         </p>
@@ -251,10 +251,10 @@ export default function TermsPage() {
         <p>
           If you have questions about these Terms, contact us at{" "}
           <a
-            href="mailto:support@pulsr.live"
+            href="mailto:miguel@pulsr.live"
             className="text-magenta hover:text-magenta-hover underline underline-offset-2"
           >
-            support@pulsr.live
+            miguel@pulsr.live
           </a>
           .
         </p>

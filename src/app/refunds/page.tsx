@@ -85,10 +85,10 @@ export default function RefundPolicyPage() {
         <p>
           To request a refund, email us at{" "}
           <a
-            href="mailto:support@pulsr.live"
+            href="mailto:miguel@pulsr.live"
             className="text-magenta hover:text-magenta-hover underline underline-offset-2"
           >
-            support@pulsr.live
+            miguel@pulsr.live
           </a>{" "}
           with your account email and a description of the issue. We aim to
           respond within 3 business days.
@@ -117,10 +117,10 @@ export default function RefundPolicyPage() {
         <p>
           If you have a billing dispute, please contact us first at{" "}
           <a
-            href="mailto:support@pulsr.live"
+            href="mailto:miguel@pulsr.live"
             className="text-magenta hover:text-magenta-hover underline underline-offset-2"
           >
-            support@pulsr.live
+            miguel@pulsr.live
           </a>
           . We can often resolve issues faster than going through your bank or
           payment provider.
@@ -149,10 +149,10 @@ export default function RefundPolicyPage() {
         <p>
           Questions about this policy? Reach us at{" "}
           <a
-            href="mailto:support@pulsr.live"
+            href="mailto:miguel@pulsr.live"
             className="text-magenta hover:text-magenta-hover underline underline-offset-2"
           >
-            support@pulsr.live
+            miguel@pulsr.live
           </a>
           .
         </p>

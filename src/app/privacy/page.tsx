@@ -277,10 +277,10 @@ export default function PrivacyPolicyPage() {
               <strong className="text-white">Data export:</strong> Request a
               copy of your data by contacting{" "}
               <a
-                href="mailto:support@pulsr.live"
+                href="mailto:miguel@pulsr.live"
                 className="text-magenta hover:text-magenta-hover underline underline-offset-2"
               >
-                support@pulsr.live
+                miguel@pulsr.live
               </a>
               .
             </li>
@@ -311,10 +311,10 @@ export default function PrivacyPolicyPage() {
             its sale. We do not sell personal information. You can exercise your
             rights by contacting us at{" "}
             <a
-              href="mailto:support@pulsr.live"
+              href="mailto:miguel@pulsr.live"
               className="text-magenta hover:text-magenta-hover underline underline-offset-2"
             >
-              support@pulsr.live
+              miguel@pulsr.live
             </a>
             .
           </p>
@@ -328,10 +328,10 @@ export default function PrivacyPolicyPage() {
             de Protecci&oacute;n de Datos Personales en Posesi&oacute;n de los
             Particulares. To exercise these rights, contact us at{" "}
             <a
-              href="mailto:support@pulsr.live"
+              href="mailto:miguel@pulsr.live"
               className="text-magenta hover:text-magenta-hover underline underline-offset-2"
             >
-              support@pulsr.live
+              miguel@pulsr.live
             </a>
             . We will respond within 20 business days as required by law.
           </p>
@@ -385,23 +385,16 @@ export default function PrivacyPolicyPage() {
           <li>
             Email:{" "}
             <a
-              href="mailto:support@pulsr.live"
+              href="mailto:miguel@pulsr.live"
               className="text-magenta hover:text-magenta-hover underline underline-offset-2"
             >
-              support@pulsr.live
+              miguel@pulsr.live
             </a>
           </li>
         </ul>
         <p>
-          For data-specific inquiries, you may also reach our data protection
-          contact at{" "}
-          <a
-            href="mailto:privacy@pulsr.live"
-            className="text-magenta hover:text-magenta-hover underline underline-offset-2"
-          >
-            privacy@pulsr.live
-          </a>
-          .
+          This email also handles data protection and privacy-specific
+          inquiries.
         </p>
       </section>
 

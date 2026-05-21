@@ -267,7 +267,7 @@ function EnglishPolicy() {
       </P>
       <div className="rounded-lg border border-border bg-surface p-6 font-[family-name:var(--font-outfit)] text-[15px] leading-relaxed">
         <p className="font-semibold text-white">PULSR</p>
-        <p className="mt-1 text-text">Email: privacy@pulsr.live</p>
+        <p className="mt-1 text-text">Email: miguel@pulsr.live</p>
         <p className="text-text">Website: https://pulsr.live</p>
       </div>
     </article>
@@ -425,7 +425,7 @@ function SpanishPolicy() {
       </P>
       <div className="rounded-lg border border-border bg-surface p-6 font-[family-name:var(--font-outfit)] text-[15px] leading-relaxed">
         <p className="font-semibold text-white">PULSR</p>
-        <p className="mt-1 text-text">Correo electr&oacute;nico: privacy@pulsr.live</p>
+        <p className="mt-1 text-text">Correo electr&oacute;nico: miguel@pulsr.live</p>
         <p className="text-text">Sitio web: https://pulsr.live</p>
       </div>
     </article>
