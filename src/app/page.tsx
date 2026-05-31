@@ -150,20 +150,20 @@ function PositioningSection() {
     >
       <div className="positioning-content mx-auto max-w-[900px] text-center">
         <span className="inline-block font-mono text-[11px] font-medium tracking-[0.2em] uppercase text-magenta">
-          Built for live shopping
+          Built for TikTok Shop
         </span>
         <h2 className="mt-3 font-[family-name:var(--font-satoshi)] text-[28px] font-extrabold leading-tight text-white sm:text-[36px] lg:text-[44px]">
           Most overlay tools are made for gamers.
           <br />
           <span className="bg-gradient-to-r from-magenta to-cyan bg-clip-text text-transparent">
-            PULSR is made for sellers.
+            pulsr is made for sellers.
           </span>
         </h2>
         <p className="mx-auto mt-6 max-w-2xl font-[family-name:var(--font-satoshi)] text-base leading-relaxed text-text sm:text-lg">
-          Every overlay is built around the things live shopping streams
-          actually need on screen — products, prices, stock, codes, shipping,
-          and proof that orders are landing. No follower counters. No gift
-          alerts. Just commerce.
+          Every TikTok Shop overlay is built around the things live shopping
+          streams actually need on screen — products, prices, stock, codes,
+          shipping, and proof that orders are landing. No follower counters.
+          No gift alerts. Just commerce.
         </p>
       </div>
     </section>
@@ -270,7 +270,7 @@ function WidgetsSection() {
           {/* Title — mobile: 1st, desktop: top right */}
           <div className="section-title order-1 text-center lg:order-none lg:col-start-2 lg:row-start-1 lg:text-left">
             <span className="inline-block font-mono text-[11px] font-medium tracking-[0.2em] uppercase text-magenta">
-              The overlay catalog
+              The TikTok Shop overlay catalog
             </span>
             <h2 className="mt-3 font-[family-name:var(--font-satoshi)] text-[28px] font-extrabold leading-tight text-white sm:text-[36px] lg:text-[42px]">
               10 overlays. 34 themes.
@@ -278,8 +278,8 @@ function WidgetsSection() {
               One copy-paste URL.
             </h2>
             <p className="mx-auto mt-4 max-w-xl font-[family-name:var(--font-satoshi)] text-base text-text lg:mx-0">
-              Every overlay below is on the Free plan. Pick what fits your
-              stream and customize the rest.
+              Every TikTok Shop overlay below is on the Free plan. Pick what
+              fits your stream and customize the rest.
             </p>
           </div>
 
@@ -721,12 +721,15 @@ function ShaderCTA() {
 const SOFTWARE_LD = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  name: "PULSR",
+  name: "pulsr",
+  alternateName: "PULSR",
   applicationCategory: "BusinessApplication",
-  applicationSubCategory: "Live Shopping Overlays",
+  applicationSubCategory: "TikTok Shop Overlays",
   operatingSystem: "Web (browser)",
   description:
-    "On-screen overlay graphics for live shopping streams. Product cards, countdowns, code drops, sales tickers, and trust badges for OBS and TikTok LIVE Studio.",
+    "TikTok Shop overlays and TikTok LIVE overlays for live shopping streams. Product cards, countdowns, code drops, sales tickers, and trust badges for TikTok LIVE Studio and OBS.",
+  keywords:
+    "tiktok overlay, tiktok shop overlay, tiktok live overlay, live shopping overlays, tiktok shop widgets, obs overlay widgets",
   url: "https://pulsr.live",
   image: "https://pulsr.live/opengraph-image",
   offers: [

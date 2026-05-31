@@ -15,7 +15,7 @@ export default function ShaderHero() {
         <div className="inline-flex items-center gap-2 rounded-full border border-cyan/20 bg-cyan/5 px-4 py-1.5 backdrop-blur-sm">
           <div className="h-1.5 w-1.5 animate-pulse rounded-full bg-cyan" />
           <span className="font-mono text-[11px] font-medium tracking-wider text-cyan">
-            Live shopping overlays
+            TikTok Shop overlays
           </span>
         </div>
 
@@ -28,8 +28,8 @@ export default function ShaderHero() {
         </h1>
 
         <p className="mx-auto mt-6 max-w-xl font-[family-name:var(--font-satoshi)] text-base leading-relaxed text-text/90 sm:text-lg">
-          Premium overlays optimized for your live shopping experience.
-          Compatible with OBS and TikTok LIVE Studio.
+          TikTok Shop overlays built for live commerce. Drop product cards,
+          countdowns, and code drops into TikTok LIVE Studio or OBS in seconds.
         </p>
 
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">

@@ -7,38 +7,44 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://pulsr.live"),
   title: {
-    default: "PULSR — Overlays for Live Shopping Streams",
-    template: "%s | PULSR",
+    default: "TikTok Shop Overlays & TikTok LIVE Overlays — pulsr",
+    template: "%s | pulsr",
   },
   description:
-    "On-screen overlay graphics built for live shopping. Product cards, countdown timers, code drops, sales tickers, and trust badges for TikTok Shop, Shopify Live, OBS, and TikTok LIVE Studio. Edit mid-stream and viewers see it in seconds.",
+    "TikTok Shop overlays and TikTok LIVE overlays for live shopping. Product cards, countdown timers, code drops, sales tickers, and trust badges for TikTok LIVE Studio, OBS, Streamlabs, and eCamm. Edit mid-stream and viewers see it in seconds.",
   keywords: [
+    "tiktok overlay",
+    "tiktok overlays",
+    "tiktok shop overlay",
+    "tiktok shop overlays",
+    "tiktok live overlay",
+    "tiktok live overlays",
+    "tiktok live studio overlay",
     "live shopping overlays",
-    "TikTok Shop overlays",
-    "OBS overlay widgets",
+    "tiktok shop widgets",
+    "obs overlay widgets",
     "live commerce graphics",
-    "TikTok LIVE Studio overlays",
     "product card overlay",
     "countdown overlay",
     "sales ticker overlay",
   ],
-  applicationName: "PULSR",
+  applicationName: "pulsr",
   category: "business",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     url: "https://pulsr.live",
-    siteName: "PULSR",
-    title: "PULSR — Overlays for Live Shopping Streams",
+    siteName: "pulsr",
+    title: "TikTok Shop Overlays & TikTok LIVE Overlays — pulsr",
     description:
-      "Product cards, countdowns, code drops, sales tickers, and trust badges. Compatible with OBS and TikTok LIVE Studio. Edit mid-stream and viewers see it in seconds.",
+      "TikTok Shop overlays for live shopping. Product cards, countdowns, code drops, sales tickers, and trust badges. Drop into OBS or TikTok LIVE Studio in one URL.",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "PULSR — Overlays for Live Shopping Streams",
+    title: "TikTok Shop Overlays & TikTok LIVE Overlays — pulsr",
     description:
-      "On-screen overlay graphics for live shopping. Product cards, countdowns, code drops, sales tickers, trust badges. OBS + TikTok LIVE Studio.",
+      "TikTok Shop overlays for live shopping. Product cards, countdowns, code drops, sales tickers, trust badges. OBS + TikTok LIVE Studio.",
   },
   robots: {
     index: true,
@@ -72,9 +78,12 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: "PULSR",
+              name: "pulsr",
+              alternateName: "PULSR",
               url: "https://pulsr.live",
               logo: "https://pulsr.live/icon",
+              description:
+                "TikTok Shop overlays and TikTok LIVE overlays for live shopping streams.",
               sameAs: [],
             }),
           }}
