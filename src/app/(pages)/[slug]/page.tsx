@@ -17,7 +17,11 @@ export async function generateMetadata({
   const { slug } = await params;
   const page = getPageBySlug(slug);
   if (!page) return {};
-  return { title: page.title, description: page.description };
+  return {
+    title: page.title,
+    description: page.description,
+    robots: { index: false, follow: false },
+  };
 }
 
 export default async function DynamicPage({

@@ -23,12 +23,15 @@ export default function TermsPage() {
       <section className="space-y-4">
         <H2>1. Introduction</H2>
         <p>
-          Welcome to PULSR (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;).
-          PULSR provides a web-based platform that lets live commerce streamers
-          create animated overlay widgets — product spotlights, flash sale
-          timers, stock counters, sales goal trackers, cart alerts, and more —
-          for use on TikTok Shop live streams and other live broadcasting
-          software such as OBS Studio and TikTok LIVE Studio.
+          PULSR is operated by{" "}
+          <span className="text-white">Miguel Arrañaga F.</span>, a sole
+          proprietorship based in Mexico (&quot;we,&quot; &quot;us,&quot; or
+          &quot;our&quot;). PULSR provides a web-based platform that lets live
+          commerce sellers create on-screen overlay graphics — product cards,
+          countdown timers, code drops, sales tickers, trust badges, and other
+          point-of-sale-style visuals — for use during live shopping broadcasts
+          on TikTok Shop, OBS Studio, TikTok LIVE Studio, and other live
+          streaming software.
         </p>
         <p>
           By creating an account or using PULSR (accessible at{" "}
@@ -129,21 +132,31 @@ export default function TermsPage() {
       <section className="space-y-4">
         <H2>6. Subscription &amp; Billing</H2>
         <p>
-          PULSR offers a free tier with limited features and a Pro tier at
-          $10/month (USD). The Pro subscription is billed on a monthly recurring
-          basis.
+          PULSR offers a free tier with limited features and a Pro tier
+          available on monthly ($12.99 USD/month) or annual ($129.99 USD/year)
+          billing. The Pro subscription is billed on a recurring basis at the
+          selected interval.
         </p>
         <p>
-          Payments and billing are handled by our third-party payment processor.
-          When you subscribe, your billing relationship may be with this
-          processor depending on their role. Your subscription automatically
-          renews each month until you cancel through your account settings or by
-          contacting support.
+          New Pro subscribers may be offered a 5-day free trial. A valid payment
+          method is required to start the trial. If you do not cancel before the
+          trial ends, the subscription converts automatically and your payment
+          method is charged for the first billing period.
+        </p>
+        {/* TODO(paddle): when switching to Paddle, name them here and add the required
+            line: "Our order process is conducted by our online reseller Paddle.com". */}
+        <p>
+          Payments are processed by our third-party payment processor, which
+          may act as the Merchant of Record for your purchase. The processor
+          handles payment processing, invoicing, tax collection, and chargeback
+          management on our behalf. Charges on your statement may appear under
+          the processor&apos;s name rather than PULSR.
         </p>
         <p>
-          You can cancel your subscription at any time. After cancellation, you
-          retain access to Pro features until the end of your current billing
-          period. See our{" "}
+          Your subscription automatically renews each billing period until you
+          cancel through your account settings or by contacting support. You can
+          cancel at any time. After cancellation, you retain access to Pro
+          features until the end of your current billing period. See our{" "}
           <Link href="/refunds" className="text-magenta hover:text-magenta-hover underline underline-offset-2">
             Refund Policy
           </Link>{" "}

@@ -19,6 +19,13 @@
   --color-purple: #8B1AFF;
   --color-cyan: #00D4CC;
 
+  /* Primary brand (matches the app dashboard) */
+  --color-primary: #9B85F5;
+  --color-primary-hover: #8B7DFF;
+  --color-primary-from: #B5A3FF;
+  --color-primary-to: #8870FF;
+  --color-primary-glow: rgba(155, 133, 245, 0.4);
+
   /* Fonts */
   --font-satoshi: "Satoshi", sans-serif;
   --font-display: var(--font-satoshi);
@@ -56,6 +63,23 @@ body::before {
 ::selection {
   background-color: var(--color-magenta);
   color: var(--color-white);
+}
+
+/* Primary CTA button — matches the violet gradient used in the app dashboard. */
+.btn-primary {
+  background-image: linear-gradient(180deg, #B5A3FF 0%, #8870FF 100%);
+  color: var(--color-white);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-image 0.2s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 18px rgba(136, 112, 255, 0.18);
+}
+.btn-primary:hover {
+  background-image: linear-gradient(180deg, #C2B3FF 0%, #9B85F5 100%);
+  box-shadow: 0 0 30px var(--color-primary-glow), 0 6px 22px rgba(136, 112, 255, 0.28);
+  transform: scale(1.02);
+}
+.btn-primary:active {
+  transform: scale(0.98);
 }
 
 /* Reduced motion */

@@ -77,12 +77,13 @@ export default function PrivacyPolicyPage() {
 
         <div className="space-y-3">
           <H3>Payment Data</H3>
+          {/* TODO(paddle): name Paddle here when switching to them as Merchant of Record. */}
           <p>
             Payment processing is handled entirely by our third-party payment
             processor. We do not collect, store, or have access to your credit
-            card numbers or full payment details. Our payment processor provides
-            us with basic transaction information (subscription status, billing
-            dates) necessary to manage your account.
+            card numbers or full payment details. The processor provides us
+            with basic transaction information (subscription status, billing
+            dates, country for tax purposes) necessary to manage your account.
           </p>
         </div>
 
@@ -141,11 +142,13 @@ export default function PrivacyPolicyPage() {
 
         <div className="space-y-3">
           <H3>Payment Processor</H3>
+          {/* TODO(paddle): name Paddle here and link to their privacy policy when switching. */}
           <p>
             Our third-party payment processor receives your billing information
-            to process subscription payments, handle invoicing, and manage tax
-            obligations. Refer to the processor&apos;s own privacy policy for
-            details on how they handle your payment data.
+            to process subscription payments, handle invoicing, collect taxes,
+            and manage chargebacks. The processor may act as the Merchant of
+            Record for your purchase. Refer to the processor&apos;s own privacy
+            policy for details on how they handle your payment data.
           </p>
         </div>
 
