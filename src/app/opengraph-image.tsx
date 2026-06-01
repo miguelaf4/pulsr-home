@@ -57,18 +57,18 @@ export default async function Image() {
         <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
           <div
             style={{
-              fontSize: 96,
+              fontSize: 92,
               fontWeight: 800,
               lineHeight: 1.02,
               letterSpacing: -1.5,
               color: "#F5F5FA",
             }}
           >
-            Sell more on every
+            Commerce overlays for
           </div>
           <div
             style={{
-              fontSize: 96,
+              fontSize: 92,
               fontWeight: 800,
               lineHeight: 1.02,
               letterSpacing: -1.5,
@@ -78,7 +78,7 @@ export default async function Image() {
               color: "transparent",
             }}
           >
-            live shopping stream.
+            TikTok Shop live streams.
           </div>
           <div
             style={{

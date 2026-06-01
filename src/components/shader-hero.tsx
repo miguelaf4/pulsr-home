@@ -20,10 +20,10 @@ export default function ShaderHero() {
         </div>
 
         <h1 className="mt-8 font-[family-name:var(--font-satoshi)] text-[40px] font-extrabold leading-[1.05] text-white sm:text-[56px] lg:text-[72px]">
-          Sell more on every
+          Commerce overlays for
           <br />
           <span className="bg-gradient-to-r from-magenta via-purple to-cyan bg-clip-text text-transparent">
-            live shopping stream.
+            TikTok Shop live streams.
           </span>
         </h1>
 
