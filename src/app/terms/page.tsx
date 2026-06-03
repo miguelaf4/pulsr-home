@@ -138,10 +138,11 @@ export default function TermsPage() {
           selected interval.
         </p>
         <p>
-          New Pro subscribers may be offered a 5-day free trial. A valid payment
-          method is required to start the trial. If you do not cancel before the
-          trial ends, the subscription converts automatically and your payment
-          method is charged for the first billing period.
+          New subscribers to the Pro monthly plan may be offered a 5-day free
+          trial. The trial is not available on the Pro annual plan. A valid
+          payment method is required to start the trial. If you do not cancel
+          before the trial ends, the subscription converts automatically and
+          your payment method is charged for the first monthly billing period.
         </p>
         {/* TODO(paddle): when switching to Paddle, name them here and add the required
             line: "Our order process is conducted by our online reseller Paddle.com". */}

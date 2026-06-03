@@ -36,12 +36,13 @@ export default function RefundPolicyPage() {
       <section className="space-y-4">
         <H2>Free Trial</H2>
         <p>
-          New Pro subscribers may be offered a 5-day free trial. A valid payment
-          method is required to start the trial. You can cancel at any time
-          during the trial through your account settings and you will not be
-          charged. If you do not cancel before the trial ends, the subscription
-          converts automatically and your payment method is charged for the
-          first billing period.
+          New subscribers to the Pro monthly plan may be offered a 5-day free
+          trial. The trial is not available on the Pro annual plan. A valid
+          payment method is required to start the trial. You can cancel at any
+          time during the trial through your account settings and you will not
+          be charged. If you do not cancel before the trial ends, the
+          subscription converts automatically and your payment method is
+          charged for the first monthly billing period.
         </p>
       </section>
 
@@ -100,6 +101,11 @@ export default function RefundPolicyPage() {
           After the 14-day money-back window has passed, we do not provide
           refunds for partial billing periods. Cancelling stops future renewals
           but does not refund the current billing period.
+        </p>
+        <p>
+          As our Merchant of Record, our payment processor may also issue
+          refunds at its own discretion within 60 days of purchase to prevent
+          payment disputes.
         </p>
         <p>
           We will still review refund requests on a case-by-case basis for

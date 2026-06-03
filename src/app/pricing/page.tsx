@@ -186,7 +186,8 @@ export default function PricingPage() {
               Start 5-day free trial
             </a>
             <p className="mt-3 text-center font-mono text-[11px] text-text/60">
-              Payment method required. Cancel anytime during the trial.
+              Payment method required. Trial available on the monthly plan
+              only — cancel anytime.
             </p>
           </div>
         </div>
@@ -232,7 +233,8 @@ export default function PricingPage() {
             All prices are in USD.
           </li>
           <li>
-            A 5-day free trial is available on first Pro signup. A valid payment
+            A 5-day free trial is available on first signup to the Pro monthly
+            plan. The trial is not offered on the annual plan. A valid payment
             method is required to start the trial.
           </li>
           <li>
@@ -268,7 +270,7 @@ export default function PricingPage() {
           <p>
             No. The free tier is forever free with no payment information
             required. A payment method is only needed to start the 5-day Pro
-            trial or to subscribe directly to Pro.
+            monthly trial or to subscribe directly to Pro.
           </p>
         </div>
 
