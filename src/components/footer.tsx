@@ -4,26 +4,18 @@ export default function Footer() {
       <div className="mx-auto flex max-w-[1200px] flex-col items-center gap-8 md:flex-row md:justify-between">
         {/* Logo + tagline */}
         <div className="flex flex-col items-center gap-2 md:items-start">
-          <svg viewBox="0 0 220 36" fill="none" className="h-7 w-auto">
-            <path
-              d="M0 18 Q5 18 7 9 Q9 0 12 18 Q14 36 17 18 Q19 5 21 18 Q23 28 26 18 L28 18"
-              stroke="#FF2D6B"
-              strokeWidth="2"
-              fill="none"
-              strokeLinecap="round"
+          <div className="flex items-center gap-2.5">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/assets/logo-pulsr-agency.svg"
+              alt=""
+              aria-hidden="true"
+              className="h-7 w-auto"
             />
-            <text
-              x="38"
-              y="26"
-              fontFamily="var(--font-satoshi), Satoshi, sans-serif"
-              fontWeight="800"
-              fontSize="28"
-              fill="#F5F5FA"
-              letterSpacing="3"
-            >
+            <span className="font-[family-name:var(--font-satoshi)] text-[20px] font-extrabold tracking-[0.18em] text-white">
               PULSR
-            </text>
-          </svg>
+            </span>
+          </div>
           <span className="font-mono text-[11px] tracking-[0.15em] uppercase text-muted">
             Live Commerce Studio · CDMX
           </span>

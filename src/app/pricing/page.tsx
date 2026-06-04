@@ -301,8 +301,8 @@ export default function PricingPage() {
           </h3>
           <p>
             Every plan includes the full overlay catalog. Visit the{" "}
-            <Link href="/" className="text-magenta hover:text-magenta-hover underline underline-offset-2">
-              homepage
+            <Link href="/overlays" className="text-magenta hover:text-magenta-hover underline underline-offset-2">
+              overlays page
             </Link>{" "}
             for the complete widget and feature breakdown.
           </p>

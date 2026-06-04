@@ -3,6 +3,8 @@
 import { useRef, useEffect, useCallback } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import ShaderCanvas from "./shader-canvas";
+import PixelOverlay from "./pixel-overlay";
 
 const PERKS = [
   { icon: "studio", label: "Estudio profesional" },
@@ -54,42 +56,11 @@ function PerkIcon({ type }: { type: string }) {
 
 export default function Hero({ ready = true }: { ready?: boolean }) {
   const sectionRef = useRef<HTMLElement>(null);
-  const gradientRef = useRef<HTMLDivElement>(null);
-  const magentaRef = useRef<HTMLDivElement>(null);
-  const blueRef = useRef<HTMLDivElement>(null);
-  const mousePos = useRef({ x: 50, y: 40 });
 
-  // Desktop: mouse-follow with independent blob physics
+  // Desktop: floating stats push away from cursor
   const handleMouseMove = useCallback((e: MouseEvent) => {
     if (!sectionRef.current) return;
-    const rect = sectionRef.current.getBoundingClientRect();
-    const x = ((e.clientX - rect.left) / rect.width) * 100;
-    const y = ((e.clientY - rect.top) / rect.height) * 100;
-    mousePos.current = { x, y };
 
-    // Magenta blob — follows closer, faster
-    if (magentaRef.current) {
-      gsap.to(magentaRef.current, {
-        x: (x - 50) * 0.6,
-        y: (y - 50) * 0.5,
-        duration: 1.2,
-        ease: "power3.out",
-        overwrite: "auto",
-      });
-    }
-
-    // Blue blob — follows loosely, slower, offset
-    if (blueRef.current) {
-      gsap.to(blueRef.current, {
-        x: (x - 50) * -0.35,
-        y: (y - 50) * 0.3,
-        duration: 2,
-        ease: "power2.out",
-        overwrite: "auto",
-      });
-    }
-
-    // Floating stats — subtle push away from cursor
     const stats = sectionRef.current.querySelectorAll(".hero-float-stat");
     stats.forEach((stat) => {
       const r = stat.getBoundingClientRect();
@@ -139,30 +110,7 @@ export default function Hero({ ready = true }: { ready?: boolean }) {
 
       const isTouch = !window.matchMedia("(pointer: fine)").matches;
 
-      // Mobile: independent organic drift for each blob
       if (isTouch) {
-        if (magentaRef.current) {
-          gsap.to(magentaRef.current, {
-            x: 40,
-            y: -30,
-            duration: 7,
-            ease: "sine.inOut",
-            yoyo: true,
-            repeat: -1,
-          });
-        }
-        if (blueRef.current) {
-          gsap.to(blueRef.current, {
-            x: -50,
-            y: 25,
-            duration: 9,
-            ease: "sine.inOut",
-            yoyo: true,
-            repeat: -1,
-            delay: 1.5,
-          });
-        }
-
         // Mobile: scroll-based physics for floating stats
         const stats = sectionRef.current?.querySelectorAll(".hero-float-stat");
         if (stats?.length) {
@@ -179,29 +127,6 @@ export default function Hero({ ready = true }: { ready?: boolean }) {
                 scrub: 1.5,
               },
             });
-          });
-        }
-      }
-
-      // Desktop: subtle idle sway so blobs feel alive even without mouse
-      if (!isTouch) {
-        if (magentaRef.current) {
-          gsap.to(magentaRef.current, {
-            y: "+=12",
-            duration: 4,
-            ease: "sine.inOut",
-            yoyo: true,
-            repeat: -1,
-          });
-        }
-        if (blueRef.current) {
-          gsap.to(blueRef.current, {
-            y: "-=10",
-            x: "+=8",
-            duration: 5,
-            ease: "sine.inOut",
-            yoyo: true,
-            repeat: -1,
           });
         }
       }
@@ -257,41 +182,17 @@ export default function Hero({ ready = true }: { ready?: boolean }) {
       ref={sectionRef}
       className="relative flex min-h-screen items-center overflow-x-clip overflow-y-visible pt-[72px]"
     >
-      {/* Interactive gradient background */}
-      <div ref={gradientRef} className="absolute inset-0">
-        {/* Base dark fill */}
-        <div className="absolute inset-0 bg-void" />
-
-        {/* Magenta blob — independent movement */}
-        <div
-          ref={magentaRef}
-          className="pointer-events-none absolute top-[30%] left-[40%] h-[500px] w-[600px] -translate-x-1/2 -translate-y-1/2 will-change-transform"
-        >
-          <div className="h-full w-full rounded-full bg-[radial-gradient(ellipse,rgba(255,45,107,0.14)_0%,transparent_70%)] blur-[80px]" />
-        </div>
-
-        {/* Blue blob — independent movement, offset */}
-        <div
-          ref={blueRef}
-          className="pointer-events-none absolute top-[55%] left-[60%] h-[400px] w-[500px] -translate-x-1/2 -translate-y-1/2 will-change-transform"
-        >
-          <div className="h-full w-full rounded-full bg-[radial-gradient(ellipse,rgba(77,93,255,0.08)_0%,transparent_70%)] blur-[60px]" />
-        </div>
-
-        {/* Vignette */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_30%,rgba(8,8,12,0.7)_100%)]" />
-
-        {/* Grain overlay */}
-        <div
-          className="absolute inset-0 opacity-[0.035]"
-          style={{
-            backgroundImage:
-              "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")",
-            backgroundRepeat: "repeat",
-            backgroundSize: "256px 256px",
-          }}
-        />
-      </div>
+      {/* Shader background (matches /overlays hero) */}
+      <ShaderCanvas className="absolute inset-0 z-0" />
+      {/* Pixelated overlay on top of the shader. Swap `variant` to test looks. */}
+      <PixelOverlay
+        variant="grid"
+        cell={6}
+        opacity={0.35}
+        blend="overlay"
+        className="z-[1]"
+      />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[2] h-48 bg-gradient-to-t from-void to-transparent" />
 
       {/* Content */}
       <div className="hero-content relative z-10 mx-auto grid w-full max-w-[1200px] grid-cols-1 items-center gap-10 px-6 py-16 md:grid-cols-[1fr_280px] md:gap-10 lg:grid-cols-[1fr_300px] lg:gap-14 lg:px-20 lg:py-0">
@@ -333,7 +234,7 @@ export default function Hero({ ready = true }: { ready?: boolean }) {
             </a>
             <a
               href="#demo-reel"
-              className="hero-cta-btn group flex items-center justify-center gap-2 rounded-lg border border-border px-7 py-3.5 font-[family-name:var(--font-satoshi)] text-[15px] font-medium text-white transition-all duration-200 hover:border-magenta hover:text-magenta"
+              className="hero-cta-btn group flex items-center justify-center gap-2 rounded-lg border border-white/15 bg-white/[0.06] px-7 py-3.5 font-[family-name:var(--font-satoshi)] text-[15px] font-medium text-white shadow-[0_4px_24px_rgba(0,0,0,0.25)] backdrop-blur-md transition-all duration-200 hover:border-magenta/60 hover:bg-white/[0.1] hover:text-magenta"
             >
               <span>Ver demo reel</span>
               <svg viewBox="0 0 20 20" fill="none" className="h-4 w-4">
@@ -370,10 +271,14 @@ export default function Hero({ ready = true }: { ready?: boolean }) {
               </div>
               {/* Screen */}
               <div className="relative flex aspect-[9/16] items-center justify-center overflow-hidden bg-gradient-to-b from-surface via-void/80 to-surface">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/assets/output.webp"
-                  alt="PULSR live commerce session"
+                <video
+                  src="/assets/oby-test-3-short.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  preload="metadata"
+                  aria-label="PULSR live commerce session"
                   className="absolute inset-0 h-full w-full object-cover"
                 />
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-void/30 via-transparent to-void/50" />

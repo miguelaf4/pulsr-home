@@ -16,7 +16,7 @@ export default function SiteFooter({ inline = false }: SiteFooterProps) {
       <div className="mx-auto max-w-[1200px]">
         <div className="grid grid-cols-2 gap-10 md:grid-cols-4">
           <div className="col-span-2 flex flex-col gap-3 md:col-span-1">
-            <Link href="/" aria-label="pulsr — home" className="inline-flex">
+            <Link href="/overlays" aria-label="pulsr — overlays home" className="inline-flex">
               <PulsrLogo size={20} />
             </Link>
             <p className="max-w-[220px] font-[family-name:var(--font-satoshi)] text-[13px] leading-relaxed text-text/70">
@@ -28,10 +28,10 @@ export default function SiteFooter({ inline = false }: SiteFooterProps) {
             <p className="font-mono text-[10px] tracking-[0.18em] uppercase text-text/40">
               Product
             </p>
-            <Link href="/#widgets" className="font-[family-name:var(--font-satoshi)] text-[13px] text-text transition-colors hover:text-white">
+            <Link href="/overlays#widgets" className="font-[family-name:var(--font-satoshi)] text-[13px] text-text transition-colors hover:text-white">
               Overlays
             </Link>
-            <Link href="/#features" className="font-[family-name:var(--font-satoshi)] text-[13px] text-text transition-colors hover:text-white">
+            <Link href="/overlays#features" className="font-[family-name:var(--font-satoshi)] text-[13px] text-text transition-colors hover:text-white">
               Features
             </Link>
             <Link href="/pricing" className="font-[family-name:var(--font-satoshi)] text-[13px] text-text transition-colors hover:text-white">

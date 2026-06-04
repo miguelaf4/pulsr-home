@@ -9,7 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: "*",
         allow: "/",
         disallow: [
-          "/home",
           "/contacto",
           "/propuestas/",
           "/test-page",

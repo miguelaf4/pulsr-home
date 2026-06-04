@@ -16,8 +16,8 @@ interface SiteNavProps {
 }
 
 const NAV_LINKS = [
-  { href: "/#widgets", label: "Overlays" },
-  { href: "/#features", label: "Features" },
+  { href: "/overlays#widgets", label: "Overlays" },
+  { href: "/overlays#features", label: "Features" },
   { href: "/pricing", label: "Pricing" },
   { href: "/contact", label: "Contact" },
   { href: "https://app.pulsr.live", label: "Log in" },
@@ -82,8 +82,8 @@ export default function SiteNav({ variant = "solid" }: SiteNavProps) {
       <nav ref={navRef} className={`${baseClasses} ${variantClasses}`}>
         <div className="mx-auto flex h-full max-w-[1200px] items-center justify-between px-6 lg:px-20">
           <a
-            href="/"
-            aria-label="pulsr — home"
+            href="/overlays"
+            aria-label="pulsr — overlays home"
             className="relative z-10 inline-flex items-center"
           >
             <PulsrLogo size={24} />

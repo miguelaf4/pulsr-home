@@ -34,14 +34,16 @@ export default function IntroAnimation({ onComplete }: { onComplete: () => void 
       // 1. Black screen pause
       tl.set(overlayRef.current, { opacity: 1 });
 
-      // 2. Pulse wave draws on
+      // 2. Logo mark scales/fades in
       tl.fromTo(
-        ".intro-wave path",
-        { strokeDashoffset: 200 },
+        ".intro-mark",
+        { opacity: 0, scale: 0.7, y: 8 },
         {
-          strokeDashoffset: 0,
+          opacity: 1,
+          scale: 1,
+          y: 0,
           duration: 0.8,
-          ease: "power2.inOut",
+          ease: "power2.out",
         },
         0.2
       );
@@ -91,23 +93,14 @@ export default function IntroAnimation({ onComplete }: { onComplete: () => void 
       className="fixed inset-0 z-[100] flex items-center justify-center bg-void"
       style={{ pointerEvents: "none" }}
     >
-      <div className="intro-logo-group flex items-center gap-3">
-        <svg
-          viewBox="0 0 60 40"
-          fill="none"
-          className="intro-wave h-10 w-16"
-        >
-          <path
-            d="M0 20 Q5 20 7.5 10 Q10 0 12.5 20 Q15 40 17.5 20 Q20 5 22.5 20 Q25 30 27.5 20 L30 20"
-            stroke="#FF2D6B"
-            strokeWidth="2.5"
-            fill="none"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeDasharray="200"
-            strokeDashoffset="200"
-          />
-        </svg>
+      <div className="intro-logo-group flex items-center gap-4">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/assets/logo-pulsr-agency.svg"
+          alt=""
+          aria-hidden="true"
+          className="intro-mark h-16 w-auto"
+        />
         <span className="intro-wordmark font-[family-name:var(--font-satoshi)] text-4xl font-extrabold tracking-[0.15em] text-white">
           PULSR
         </span>

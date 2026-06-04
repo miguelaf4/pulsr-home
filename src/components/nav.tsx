@@ -45,31 +45,17 @@ export default function Nav() {
       >
         <div className="mx-auto flex h-full max-w-[1200px] items-center justify-between px-6 lg:px-20">
           {/* Logo */}
-          <a href="/" className="relative z-10 flex items-center gap-2">
-            <svg
-              viewBox="0 0 320 60"
-              fill="none"
-              className="h-8 w-auto"
-            >
-              <path
-                d="M0 30 Q8 30 12 15 Q16 0 20 30 Q24 60 28 30 Q32 8 36 30 Q40 48 44 30 L48 30"
-                stroke="#FF2D6B"
-                strokeWidth="3"
-                fill="none"
-                strokeLinecap="round"
-              />
-              <text
-                x="62"
-                y="43"
-                fontFamily="var(--font-satoshi), Satoshi, sans-serif"
-                fontWeight="800"
-                fontSize="44"
-                fill="#F5F5FA"
-                letterSpacing="4"
-              >
-                PULSR
-              </text>
-            </svg>
+          <a href="/" className="relative z-10 flex items-center gap-3">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/assets/logo-pulsr-agency.svg"
+              alt=""
+              aria-hidden="true"
+              className="h-9 w-auto"
+            />
+            <span className="font-[family-name:var(--font-satoshi)] text-[24px] font-extrabold tracking-[0.18em] text-white">
+              PULSR
+            </span>
           </a>
 
           {/* Desktop links */}
