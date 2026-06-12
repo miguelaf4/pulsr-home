@@ -81,12 +81,16 @@ function SlideCover({ active }: { active: boolean }) {
   return (
     <SlideWrap active={active}>
       <div className="flex flex-col items-center text-center">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/assets/owts-logo.avif"
-          alt="OWTS"
-          className="anim mx-auto mb-8 h-16 w-auto brightness-[2] contrast-[0.9] sm:h-20"
-        />
+        {/* black logo on dark bg — silhouette it against a brand-gradient glow */}
+        <div className="anim relative mb-8">
+          <div className="pointer-events-none absolute top-1/2 left-1/2 h-28 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-r from-magenta/50 via-purple/45 to-blue/40 blur-[32px] sm:h-32 sm:w-80" />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/assets/owts-logo.avif"
+            alt="OWTS"
+            className="relative mx-auto h-16 w-auto sm:h-20"
+          />
+        </div>
         <span className="anim font-[family-name:var(--font-mono)] text-xs font-medium tracking-[0.25em] uppercase text-magenta">
           Análisis de Oportunidad
         </span>
