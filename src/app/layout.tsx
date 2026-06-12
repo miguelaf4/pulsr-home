@@ -7,44 +7,42 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://pulsr.live"),
   title: {
-    default: "TikTok Shop Overlays & TikTok LIVE Overlays — pulsr",
-    template: "%s | pulsr",
+    default: "PULSR — Agencia de Live Commerce en TikTok Shop México",
+    template: "%s | PULSR",
   },
   description:
-    "TikTok Shop overlays and TikTok LIVE overlays for live shopping. Product cards, countdown timers, code drops, sales tickers, and trust badges for TikTok LIVE Studio, OBS, Streamlabs, and eCamm. Edit mid-stream and viewers see it in seconds.",
+    "Operamos los lives de tu marca en TikTok Shop México — todo incluido. Estudio, host, estrategia y operación en vivo: producción profesional que convierte transmisiones en ventas.",
   keywords: [
-    "tiktok overlay",
-    "tiktok overlays",
-    "tiktok shop overlay",
-    "tiktok shop overlays",
-    "tiktok live overlay",
-    "tiktok live overlays",
-    "tiktok live studio overlay",
-    "live shopping overlays",
-    "tiktok shop widgets",
-    "obs overlay widgets",
-    "live commerce graphics",
-    "product card overlay",
-    "countdown overlay",
-    "sales ticker overlay",
+    "agencia tiktok shop",
+    "agencia tiktok shop méxico",
+    "live commerce méxico",
+    "agencia live commerce",
+    "lives tiktok shop",
+    "live shopping méxico",
+    "agencia de lives",
+    "tiktok shop méxico",
+    "estudio live commerce",
+    "venta en vivo tiktok",
+    "transmisiones en vivo para marcas",
+    "host para lives tiktok",
   ],
-  applicationName: "pulsr",
+  applicationName: "PULSR",
   category: "business",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     url: "https://pulsr.live",
-    siteName: "pulsr",
-    title: "TikTok Shop Overlays & TikTok LIVE Overlays — pulsr",
+    siteName: "PULSR",
+    title: "PULSR — Agencia de Live Commerce en TikTok Shop México",
     description:
-      "TikTok Shop overlays for live shopping. Product cards, countdowns, code drops, sales tickers, and trust badges. Drop into OBS or TikTok LIVE Studio in one URL.",
-    locale: "en_US",
+      "Operamos los lives de tu marca en TikTok Shop México — todo incluido. Estudio, host, estrategia y operación en vivo.",
+    locale: "es_MX",
   },
   twitter: {
     card: "summary_large_image",
-    title: "TikTok Shop Overlays & TikTok LIVE Overlays — pulsr",
+    title: "PULSR — Agencia de Live Commerce en TikTok Shop México",
     description:
-      "TikTok Shop overlays for live shopping. Product cards, countdowns, code drops, sales tickers, trust badges. OBS + TikTok LIVE Studio.",
+      "Operamos los lives de tu marca en TikTok Shop México — todo incluido. Estudio, host, estrategia y operación en vivo.",
   },
   robots: {
     index: true,
@@ -65,7 +63,7 @@ export default function RootLayout({
 }) {
   return (
     <html
-      lang="en"
+      lang="es-MX"
       className={ibmPlexMono.variable}
     >
       <head>
@@ -78,12 +76,13 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: "pulsr",
-              alternateName: "PULSR",
+              name: "PULSR",
+              alternateName: "pulsr",
               url: "https://pulsr.live",
               logo: "https://pulsr.live/icon",
               description:
-                "TikTok Shop overlays and TikTok LIVE overlays for live shopping streams.",
+                "Agencia de live commerce. Operamos los lives de tu marca en TikTok Shop México — estudio, host, estrategia y operación en vivo.",
+              areaServed: "MX",
               sameAs: [],
             }),
           }}
